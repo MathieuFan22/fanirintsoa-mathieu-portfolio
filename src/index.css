@@ -1,8 +1,6 @@
-/* @tailwind base; */
-/* @tailwind components; */
-@tailwind utilities;
-
-body{
+/* src/index.css (or Tailwind for styling) */
+body {
     margin: 0;
-    padding: 0;
-}
+    font-family: Arial, sans-serif;
+  }
+  

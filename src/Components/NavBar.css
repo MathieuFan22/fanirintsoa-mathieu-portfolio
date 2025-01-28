@@ -1,0 +1,54 @@
+/* src/components/Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 50;
+    backdrop-filter: blur(10px); 
+    box-shadow: none;
+  }
+  
+  .navbar.scrolled {
+    background-color: rgb(41, 28, 28);
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); 
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: gray;
+  }
+  

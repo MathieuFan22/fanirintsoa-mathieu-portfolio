@@ -1,36 +1,26 @@
+// src/App.tsx
+import React from "react";
+import Navbar from "./Components/NavBar";
+import "./App.css";
 
-import './App.css'
-import { ArrowRight02Icon, Home01Icon } from "hugeicons-react";
-
-function App() {
-
+const App: React.FC = () => {
   return (
-    <div className="container">
-      <div className="card">
-        <div className="box">
-          <div className="icon">
-            <div className="iconBox">
-              <div className="lastname">Fanirintsoa</div>
-              <div className="firstname">Mathieu</div>
-            </div>
-          </div>
-          <div className="content">
-              <div className="circle">
-
-              </div>
-              <div className="presentation">
-                <div className="light-text">I'm</div>
-                <div className="light-text-name">Fanirinstoa</div>
-                <div className="bold-text-name">Mathieu</div>
-                <div className="get-in-touch"><ArrowRight02Icon size={32} color="#000"/></div>
-                
-              </div>
-          </div>
-          
-        </div>
-      </div>
+    <div>
+      <Navbar />
+      <section id="home" className="section dark">
+        <h1>Welcome to the Dark Theme Page</h1>
+      </section>
+      <section id="about" className="section light">
+        <h1>About Section</h1>
+      </section>
+      <section id="services" className="section dark">
+        <h1>Services Section</h1>
+      </section>
+      <section id="contact" className="section light">
+        <h1>Contact Section</h1>
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
