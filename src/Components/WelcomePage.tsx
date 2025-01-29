@@ -30,6 +30,7 @@ const WelcomePage: React.FC = () => {
           </a>
         </div>
       </div>
+      
     </section>
   );
 };

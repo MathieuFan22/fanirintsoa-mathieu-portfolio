@@ -1,0 +1,35 @@
+.slider-container {
+  top: -200px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  transform: rotate(-4deg);
+}
+
+.slider {
+  display: flex;
+  gap: 30px; /* Adjust spacing between items */
+  animation: slide 15s linear infinite;
+  width: max-content; /* Ensure the content flows smoothly */
+}
+
+.text-item {
+  padding: 10px 20px;
+  font-size: 24px;
+  background: #f4f4f4;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -51,8 +51,13 @@ const Navbar: React.FC = () => {
             </a>
           </li>
           <li>
-            <a href="#services" onClick={() => setIsOpen(false)}>
-              Services
+            <a href="#skills" onClick={() => setIsOpen(false)}>
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#projects" onClick={() => setIsOpen(false)}>
+              Projects
             </a>
           </li>
           <li>
