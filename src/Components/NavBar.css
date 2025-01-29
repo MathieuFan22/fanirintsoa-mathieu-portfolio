@@ -19,6 +19,7 @@
   z-index: 50;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(12px);
+  font-family: "Modernist-Regular";
 }
 
 .navbar.scrolled {

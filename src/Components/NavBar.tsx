@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./NavBar.css";
+import { Fade } from "react-awesome-reveal";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,8 +21,13 @@ const Navbar: React.FC = () => {
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
         <div className="brand">
+          <Fade direction="right">
           <img className="logo" src="/logo.png" alt="Logo" />
+          </Fade>
+          <Fade direction="left">
           Brand
+          </Fade>
+          
         </div>
 
         {/* Burger Menu Button */}

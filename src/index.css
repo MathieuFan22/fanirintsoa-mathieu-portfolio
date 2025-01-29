@@ -1,9 +1,43 @@
 /* src/index.css (or Tailwind for styling) */
+@font-face {
+  font-family: "Neue-Machina-Bold";
+  src: url("/assets/Fonts/NeueMachina-Ultrabold.otf");
+}
+@font-face {
+  font-family: "Neue-Machina-Regular";
+  src: url("/assets/Fonts/NeueMachina-Regular.otf");
+}
+
+@font-face {
+  font-family: "Neue-Machina-Light";
+  src: url("/assets/Fonts/NeueMachina-Light.otf");
+}
+@font-face {
+  font-family: "Modernist-Bold";
+  src: url("/assets/Fonts/Sk-Modernist-Bold.otf");
+}
+@font-face {
+  font-family: "Modernist-Regular";
+  src: url("/assets/Fonts/Sk-Modernist-Regular.otf");
+}
+
+@font-face {
+  font-family: "Modernist-Mono";
+  src: url("/assets/Fonts/Sk-Modernist-Mono.otf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("/assets/Fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("/assets/Fonts/Poppins-Thin.ttf");
+}
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  /* Scrollbar width */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+/* Scrollbar width */
 ::-webkit-scrollbar {
   width: 15px; /* Adjust width */
 }
