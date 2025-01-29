@@ -12,6 +12,12 @@
   .left-side {
     width: 50%;
   }
+  .left-side .function {
+    font-family: "Modernist-Regular";
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+  }
   
   .left-side h1 {
     font-size: 3rem;

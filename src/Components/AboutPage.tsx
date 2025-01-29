@@ -1,17 +1,17 @@
 import React from "react";
-import "./WelcomePage.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import "./AboutPage.css";
+import { Fade } from "react-awesome-reveal";
 
 const AboutPage: React.FC = () => {
   return (
-    <section id="welcome" className="welcome-section">
+    <div className="about-section">
       <div className="left-side">
-        <h1>About </h1>
-        
+        <Fade direction="left">
+          <h1>About</h1>
+        </Fade>
+        <div className="line"></div>
       </div>
-      {/* <div className="right-side"></div> */}
-    </section>
+    </div>
   );
 };
 

@@ -1,0 +1,26 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.about-section .left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: last baseline;
+  width: 100%;
+  padding-left: 2rem ;
+
+}
+
+.about-section h1 {
+  margin: 0;
+}
+
+.line {
+  flex-grow: 1; /* Makes the line stretch to fill the available space */
+  height: 0.5px;
+  background-color: #ffffffa2;
+  margin-left: 2%;
+  margin-right: 10%; /* 20px space at the end */
+}

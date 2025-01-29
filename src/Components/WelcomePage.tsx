@@ -11,6 +11,7 @@ const WelcomePage: React.FC = () => {
         <h2>
           I'm <span className="firstname">Fanirintsoa</span> Mathieu
         </h2>
+        <div className="function">Developer / Designer</div>
         <div className="social-links">
           <a
             href="https://www.linkedin.com"
