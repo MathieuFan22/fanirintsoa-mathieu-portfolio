@@ -21,28 +21,45 @@ const Navbar: React.FC = () => {
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
         <div className="brand">
-          <Fade direction="right">
           <img className="logo" src="/logo.png" alt="Logo" />
-          </Fade>
-          <Fade direction="left">
-          Brand
-          </Fade>
-          
+          <div className="name-logo">
+            <Fade direction="right">Fanirintsoa</Fade>
+            <Fade direction="left">Mathieu</Fade>
+          </div>
         </div>
 
         {/* Burger Menu Button */}
-        <div className={`burger-menu ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(!isOpen)}>
+        <div
+          className={`burger-menu ${isOpen ? "open" : ""}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>
         </div>
 
         {/* Navigation Links */}
-        <ul className={`nav-links ${isOpen ? "active" : ""}`}>
-          <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
-          <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
-          <li><a href="#services" onClick={() => setIsOpen(false)}>Services</a></li>
-          <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
+        <ul className={`nav-links ${isOpen ? "active" : "inactive"}`}>
+          <li>
+            <a href="#home" onClick={() => setIsOpen(false)}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" onClick={() => setIsOpen(false)}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#services" onClick={() => setIsOpen(false)}>
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={() => setIsOpen(false)}>
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

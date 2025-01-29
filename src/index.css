@@ -33,10 +33,21 @@
   font-family: "Poppins-Light";
   src: url("/assets/Fonts/Poppins-Thin.ttf");
 }
+@font-face {
+  font-family: "Strretch";
+  src: url("/assets/Fonts/Strretch.otf");
+  font-stretch: 150%; 
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  scroll-snap-type: y mandatory;
 }
+
 /* Scrollbar width */
 ::-webkit-scrollbar {
   width: 15px; /* Adjust width */

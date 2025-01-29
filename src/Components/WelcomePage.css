@@ -1,0 +1,82 @@
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    color: white;
+    min-height: 100vh; 
+    font-family: "Modernist-Regular";
+    /* background-color: red; */
+  }
+  
+  .left-side {
+    width: 50%;
+  }
+  
+  .left-side h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: "Strretch";
+    
+  }
+  .firstname {
+    font-family: "Modernist-Regular";
+    font-weight: 100;
+  }
+  .left-side h2 {
+    font-family: "Strretch";
+    font-size: 2rem;
+  }
+  
+  .left-side p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .social-links a {
+    display: block;
+    font-size: 1.2rem;
+    color: rgb(209, 209, 209);
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: gray;
+  }
+  
+  .right-side {
+    width: 45%;
+    height: 100%; /* Ensure it's taking full height */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4) 60%, rgba(255, 255, 255, 0.6) 80%);
+    filter: blur(15px); /* Increased blur effect */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .welcome-section {
+      padding-top: 420px;
+      flex-direction: column;
+    }
+  
+    .left-side {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .right-side {
+      width: 100%;
+    }
+    .left-side h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
