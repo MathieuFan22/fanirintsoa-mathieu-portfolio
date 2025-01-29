@@ -13,7 +13,7 @@
     width: 50%;
   }
   .left-side .function {
-    font-family: "Modernist-Regular";
+    font-family: "Poppins-Regular";
     font-size: 2rem;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
@@ -25,8 +25,8 @@
     font-family: "Strretch";
     
   }
-  .firstname {
-    font-family: "Modernist-Regular";
+  .left-side .firstname {
+    font-family: "Poppins-Regular";
     font-weight: 100;
   }
   .left-side h2 {
