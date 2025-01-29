@@ -9,14 +9,17 @@ const App: React.FC = () => {
       <Navbar />
       <section id="home" className="section dark">
         <h1>Welcome to the Dark Theme Page</h1>
+        <h1>Welcome to the Dark Theme Page</h1>
+        <h1>Welcome to the Dark Theme Page</h1>
+        
       </section>
-      <section id="about" className="section light">
+      <section id="about" className="section dark">
         <h1>About Section</h1>
       </section>
       <section id="services" className="section dark">
         <h1>Services Section</h1>
       </section>
-      <section id="contact" className="section light">
+      <section id="contact" className="section dark">
         <h1>Contact Section</h1>
       </section>
     </div>

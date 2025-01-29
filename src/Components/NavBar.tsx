@@ -1,9 +1,9 @@
-// src/components/Navbar.tsx
 import React, { useState, useEffect } from "react";
 import "./NavBar.css";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,12 +19,24 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
-        <div className="brand">Brand</div>
-        <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <div className="brand">
+          <img className="logo" src="/logo.png" alt="Logo" />
+          Brand
+        </div>
+
+        {/* Burger Menu Button */}
+        <div className={`burger-menu ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(!isOpen)}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+
+        {/* Navigation Links */}
+        <ul className={`nav-links ${isOpen ? "active" : ""}`}>
+          <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
+          <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
+          <li><a href="#services" onClick={() => setIsOpen(false)}>Services</a></li>
+          <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
         </ul>
       </div>
     </nav>

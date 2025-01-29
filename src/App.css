@@ -28,6 +28,9 @@ body {
   .dark {
     background-color: #1a1a1a;
     color: white;
+    background-image: radial-gradient(rgb(78, 78, 78) 1px, transparent 0.5px);
+  background-size: 30px 30px; /* Dot spacing */
+  background-position: 0 0;
   }
   
   .light {
