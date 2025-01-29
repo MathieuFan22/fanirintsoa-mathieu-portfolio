@@ -2,7 +2,7 @@ import React from "react";
 import "./InfiniteSlider.css";
 
 const technologies = [
-  "React", "Node.js", "JavaScript", "TypeScript", "Python", "CSS", "HTML", "MongoDB", "GraphQL", "Redux"
+  "Flutter", "React TS", "Node.js", "JavaScript", "TypeScript", "CSS", "HTML", "MongoDB", "Figma", "A. Illustrator"
 ];
 
 const InfiniteSlider: React.FC = () => {

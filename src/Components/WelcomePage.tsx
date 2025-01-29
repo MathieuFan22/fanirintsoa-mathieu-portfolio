@@ -30,6 +30,9 @@ const WelcomePage: React.FC = () => {
           </a>
         </div>
       </div>
+      <div className="right-side">
+        <img className="image-circle" src="/me.jpg" alt=""  />
+      </div>
       
     </section>
   );

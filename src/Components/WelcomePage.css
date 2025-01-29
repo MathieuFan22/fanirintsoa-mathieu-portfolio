@@ -3,13 +3,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
+    padding-left: 12%;
     color: white;
-    min-height: 100vh; 
+    min-height: 90vh; 
     font-family: "Modernist-Regular";
-    /* background-color: red; */
   }
   
-  .left-side {
+  .left-side, .right-side {
     width: 50%;
   }
   .left-side .function {
@@ -34,10 +34,14 @@
     font-size: 2rem;
   }
   
-  .left-side p {
+  .left-side p , .right-side p{
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
+  }
+  .image-circle {
+    width: 400px;
+    border-radius: 50%;
   }
   .social-links {
     display: flex;
@@ -55,31 +59,28 @@
   .social-links a:hover {
     color: gray;
   }
-  
-  .right-side {
-    width: 45%;
-    height: 100%; /* Ensure it's taking full height */
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4) 60%, rgba(255, 255, 255, 0.6) 80%);
-    filter: blur(15px); /* Increased blur effect */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
+
   
   
   @media (max-width: 768px) {
     .welcome-section {
       padding-top: 420px;
       flex-direction: column;
+      justify-content: flex-start;
     }
-  
+    
     .left-side {
       width: 100%;
-      margin-bottom: 2rem;
+    }
+    .right-side {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 0rem;
     }
   
-    .right-side {
-      width: 100%;
+    .image-circle {
+      width: 300px;
     }
     .left-side h1 {
       font-size: 1.5rem;

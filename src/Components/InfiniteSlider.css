@@ -17,12 +17,11 @@
 }
 
 .text-item {
-  padding: 10px 20px;
   font-size: 24px;
   background: #f4f4f4;
   border-radius: 5px;
   color: black;
-  font-weight: bold;
+  font-family: "Modernist-Regular";
 }
 
 @keyframes slide {
@@ -32,4 +31,11 @@
   100% {
     transform: translateX(-50%);
   }
+}
+@media (max-width: 768px) {
+  .slider-container {
+    top: 120px;
+    transform: rotate(-6deg);
+  }
+  
 }
