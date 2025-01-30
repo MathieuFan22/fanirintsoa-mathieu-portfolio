@@ -4,9 +4,10 @@
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  background-color: #ffffff;
+  background-color: #ffffff4f;
   padding: 0.5rem;
-  transform: rotate(-4deg);
+  backdrop-filter: blur(10px);
+  /* transform: rotate(-4deg); */
 }
 
 .slider {
@@ -18,9 +19,8 @@
 
 .text-item {
   font-size: 24px;
-  background: #f4f4f4;
   border-radius: 5px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: "Modernist-Regular";
 }
 
@@ -33,9 +33,5 @@
   }
 }
 @media (max-width: 768px) {
-  .slider-container {
-    top: 120px;
-    transform: rotate(-6deg);
-  }
   
 }

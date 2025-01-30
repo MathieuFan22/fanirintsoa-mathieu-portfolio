@@ -8,6 +8,22 @@
     min-height: 90vh; 
     font-family: "Modernist-Regular";
   }
+  .underline-name {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .underline-name img {
+    position: absolute;
+    bottom: -25px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%) rotate(185deg);
+    mix-blend-mode: overlay;
+    width: 110%; /* Adjust width to match the text */
+    pointer-events: none; /* Prevent interactions */
+  }
+  
+
   
   .left-side, .right-side {
     width: 50%;

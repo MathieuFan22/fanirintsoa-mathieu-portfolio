@@ -20,6 +20,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
+        <a href="#home">
         <div className="brand">
           <img className="logo" src="/logo.png" alt="Logo" />
           <div className="name-logo">
@@ -27,6 +28,8 @@ const Navbar: React.FC = () => {
             <Fade direction="left">Mathieu</Fade>
           </div>
         </div>
+        </a>
+        
 
         {/* Burger Menu Button */}
         <div

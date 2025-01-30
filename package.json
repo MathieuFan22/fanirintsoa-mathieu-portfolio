@@ -14,6 +14,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@studio-freight/lenis": "^1.0.42",
     "@tsparticles/all": "^3.8.0",
     "@tsparticles/react": "^3.0.0",
     "framer-motion": "^12.0.6",

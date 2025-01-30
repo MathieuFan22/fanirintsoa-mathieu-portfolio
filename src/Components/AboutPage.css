@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: row;
   align-items: last baseline;
-  padding-left: 5%;
+  padding-left: 10%;
 }
 .about-section .section-content {
   margin: 3%;
