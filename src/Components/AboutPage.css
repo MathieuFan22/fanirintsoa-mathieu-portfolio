@@ -4,6 +4,10 @@
   /* align-items: center; */
   width: 100%;
 }
+.about-section .underline-name img {
+  top: 20px;
+  height: 60%;
+}
 .about-section .section-title {
   display: flex;
   flex-direction: row;

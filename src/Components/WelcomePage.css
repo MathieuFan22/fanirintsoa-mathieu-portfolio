@@ -15,7 +15,8 @@
   
   .underline-name img {
     position: absolute;
-    bottom: -25px; /* Adjust as needed */
+    height: 25px;
+    bottom: -17px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%) rotate(185deg);
     mix-blend-mode: overlay;
@@ -80,19 +81,34 @@
   
   @media (max-width: 768px) {
     .welcome-section {
-      padding-top: 420px;
+      padding-top: 300px;
       flex-direction: column;
       justify-content: flex-start;
+      padding-left: 8%;
+      
+    }
+    .left-side p , .right-side p{
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .left-side .function {
+      font-family: "Poppins-Regular";
+      font-size: 1.5rem;
+      color: rgb(255, 255, 255);
+      margin-bottom: 20px;
+    }
+    .welcome-section .left-side {
+      width: 90%;
+      /* border: 2px solid green; */
     }
     
-    .left-side {
-      width: 100%;
-    }
     .right-side {
       display: flex;
       justify-content: center;
-      width: 100%;
+      width: 90%;
       margin-bottom: 0rem;
+      /* border: 2px solid green; */
     }
   
     .image-circle {

@@ -1,7 +1,15 @@
 import React from "react";
 import "./WelcomePage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faWhatsapp,
+  faFacebookMessenger,
+  faFacebook,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { Fade } from "react-awesome-reveal";
 
 const WelcomePage: React.FC = () => {
   return (
@@ -12,7 +20,9 @@ const WelcomePage: React.FC = () => {
           <span className="firstname">I'm</span>{" "}
           <div className="underline-name">
             <span>Mathieu</span>
-            <img src="/hand drawn underline.png" alt="Underline" />
+            <Fade direction="left">
+              <img src="/hand drawn underline.png" alt="Underline" />
+            </Fade>
           </div>
         </h2>
         <div className="function">Developer / Designer</div>
@@ -28,6 +38,27 @@ const WelcomePage: React.FC = () => {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} />
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faXTwitter} />
           </a>
           <a
             href="https://github.com"

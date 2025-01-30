@@ -7,10 +7,12 @@ import InfiniteSlider from "./Components/InfiniteSlider";
 import SkillsPage from "./Components/SkillsPage";
 import ProjectsPage from "./Components/ProjectsPage";
 import useLenis from "./useLenis";
+import CursorMask from "./CursorMask";
 const App: React.FC = () => {
   useLenis(); 
   return (
     <div className="container">
+      <CursorMask />
       <Navbar />
       <section id="home" className="section dark">
         <Fade direction="left">
