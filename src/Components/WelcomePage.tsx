@@ -1,11 +1,11 @@
 import React from "react";
 import "./WelcomePage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
   faGithub,
   faWhatsapp,
-  faFacebookMessenger,
   faFacebook,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
@@ -27,9 +27,8 @@ const WelcomePage: React.FC = () => {
         </h2>
         <div className="function">Developer / Designer</div>
         <p>
-          I've spent the last 5 years building and scaling software for some
-          pretty cool companies. I also teach people to paint online incase
-          you've got an empty canvas layin' around{" "}
+          I'm a passionate frontend developer who loves exploring new
+          challenges, sharing my knowledge, and constantly expanding my skills
         </p>
         <div className="social-links">
           <a
@@ -67,6 +66,9 @@ const WelcomePage: React.FC = () => {
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
+        </div>
+        <div className="download-resume">
+          <button><FontAwesomeIcon className="icon" icon={faDownload} />Download resume</button>
         </div>
       </div>
     </section>

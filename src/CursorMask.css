@@ -8,5 +8,10 @@
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 9999;
+    /* clip-path: polygon(24% 26%, 24% 77%, 35% 69%, 40% 81%, 46% 79%, 40% 65%, 48% 65%); */
   }
-  
+  @media (max-width: 768px) {
+    .cursor-mask {
+        display: none;
+    }
+  }

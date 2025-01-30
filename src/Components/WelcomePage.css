@@ -76,7 +76,29 @@
   .social-links a:hover {
     color: gray;
   }
-
+  .download-resume {
+    margin-top: 3%;
+  }
+  .download-resume .icon {
+    padding-right: 10px;
+    size: 0.7rem;
+  }
+  .download-resume button {
+    background: rgba(153, 42, 42, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+font-family: "Modernist-Regular";    
+border: 2px solid rgba(255, 0, 0, 0.315);
+font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .download-resume button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+  }
   
   
   @media (max-width: 768px) {

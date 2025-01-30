@@ -46,8 +46,12 @@ body {
   scroll-behavior: smooth;
   overscroll-behavior: contain;
   scroll-snap-type: y mandatory;
+  /* cursor: none; */
 }
-
+::selection {
+  background: red;
+  color: white;
+}
 /* Scrollbar width */
 ::-webkit-scrollbar {
   width: 15px; /* Adjust width */

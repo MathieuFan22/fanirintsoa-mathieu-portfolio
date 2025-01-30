@@ -12,7 +12,7 @@ const App: React.FC = () => {
   useLenis(); 
   return (
     <div className="container">
-      <CursorMask />
+      {/* <CursorMask /> */}
       <Navbar />
       <section id="home" className="section dark">
         <Fade direction="left">

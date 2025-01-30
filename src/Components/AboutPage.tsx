@@ -6,7 +6,7 @@ const AboutPage: React.FC = () => {
   return (
     <div className="about-section">
       <div className="section-title">
-        <Fade direction="left">
+        <Fade direction="right">
           {/* <div className="underline-name"> */}
             <h1>About</h1>
 
