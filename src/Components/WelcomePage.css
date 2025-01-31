@@ -1,143 +1,134 @@
 .welcome-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
-    padding-left: 12%;
-    color: white;
-    min-height: 90vh; 
-    font-family: "Modernist-Regular";
-  }
-  .underline-name {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .underline-name img {
-    position: absolute;
-    height: 25px;
-    bottom: -17px; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%) rotate(185deg);
-    mix-blend-mode: overlay;
-    width: 110%; /* Adjust width to match the text */
-    pointer-events: none; /* Prevent interactions */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  padding-left: 12%;
+  color: white;
+  min-height: 90vh;
+  font-family: "Modernist-Regular";
+}
+.underline-name {
+  position: relative;
+  display: inline-block;
+}
 
-  
-  .left-side, .right-side {
-    width: 50%;
+.underline-name img {
+  position: absolute;
+  height: 25px;
+  bottom: -17px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%) rotate(185deg);
+  mix-blend-mode: overlay;
+  width: 110%; /* Adjust width to match the text */
+  pointer-events: none; /* Prevent interactions */
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+}
+.left-side .function {
+  font-size: 2rem;
+  color: rgb(179, 0, 0);
+  margin-bottom: 20px;
+}
+
+.left-side h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: "Strretch";
+}
+.left-side .firstname {
+  font-family: "Poppins-Regular";
+  font-weight: 100;
+}
+.left-side h2 {
+  font-family: "Strretch";
+  font-size: 2rem;
+}
+
+.left-side p,
+.right-side p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  background-color: #131313a2;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.social-links a {
+  display: block;
+  font-size: 1.2rem;
+  color: rgb(209, 209, 209);
+  margin-bottom: 0.8rem;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: gray;
+}
+.download-resume {
+  margin-top: 3%;
+}
+.download-resume .icon {
+  padding-right: 10px;
+  size: 0.7rem;
+}
+.download-resume button {
+  background: rgba(153, 42, 42, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: "Modernist-Regular";
+  border: 2px solid rgba(255, 0, 0, 0.315);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.download-resume button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+}
+
+@media (max-width: 768px) {
+  .welcome-section {
+    padding-top: 300px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 8%;
   }
-  .left-side .function {
-    font-family: "Poppins-Regular";
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-    margin-bottom: 20px;
-  }
-  
-  .left-side h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-family: "Strretch";
-    
-  }
-  .left-side .firstname {
-    font-family: "Poppins-Regular";
-    font-weight: 100;
-  }
-  .left-side h2 {
-    font-family: "Strretch";
-    font-size: 2rem;
-  }
-  
-  .left-side p , .right-side p{
-    font-size: 1.2rem;
+  .left-side p,
+  .right-side p {
+    font-size: 1.1rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
   }
-  .image-circle {
-    width: 400px;
-    border-radius: 50%;
+  .left-side .function {
+    font-family: "Modernist-Regular";
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
   }
-  .social-links {
+  .welcome-section .left-side {
+    width: 90%;
+    /* border: 2px solid green; */
+  }
+
+  .right-side {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 0rem;
+    /* border: 2px solid green; */
   }
-  .social-links a {
-    display: block;
-    font-size: 1.2rem;
-    color: rgb(209, 209, 209);
-    margin-bottom: 0.8rem;
-    text-decoration: none;
+
+  .left-side h1 {
+    font-size: 1.5rem;
   }
-  
-  .social-links a:hover {
-    color: gray;
-  }
-  .download-resume {
-    margin-top: 3%;
-  }
-  .download-resume .icon {
-    padding-right: 10px;
-    size: 0.7rem;
-  }
-  .download-resume button {
-    background: rgba(153, 42, 42, 0.1);
-    backdrop-filter: blur(10px);
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-font-family: "Modernist-Regular";    
-border: 2px solid rgba(255, 0, 0, 0.315);
-font-size: 1rem;
-    transition: all 0.3s ease;
-  }
-  
-  .download-resume button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border: 2px solid white;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .welcome-section {
-      padding-top: 300px;
-      flex-direction: column;
-      justify-content: flex-start;
-      padding-left: 8%;
-      
-    }
-    .left-side p , .right-side p{
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-      line-height: 1.6;
-    }
-    .left-side .function {
-      font-family: "Poppins-Regular";
-      font-size: 1.5rem;
-      color: rgb(255, 255, 255);
-      margin-bottom: 20px;
-    }
-    .welcome-section .left-side {
-      width: 90%;
-      /* border: 2px solid green; */
-    }
-    
-    .right-side {
-      display: flex;
-      justify-content: center;
-      width: 90%;
-      margin-bottom: 0rem;
-      /* border: 2px solid green; */
-    }
-  
-    .image-circle {
-      width: 300px;
-    }
-    .left-side h1 {
-      font-size: 1.5rem;
-    }
-  }
-  
+}

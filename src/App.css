@@ -81,6 +81,17 @@ html, body {
   z-index: -1;
   animation: animateBlur2 8s ease-in-out infinite alternate;
 }
+.footer {
+  width: 100%;
+  color: lightgreygrey;
+  text-align: center;
+  padding: 1rem 0;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  font-family: "Modernist-Regular";
+}
+
 @media (max-width: 768px) {
   .container::before {
     top: 40%;

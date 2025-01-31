@@ -8,11 +8,13 @@ import SkillsPage from "./Components/SkillsPage";
 import ProjectsPage from "./Components/ProjectsPage";
 import useLenis from "./useLenis";
 import CursorMask from "./CursorMask";
+import ScrollProgressCircle from "./ScrollProgressCircle";
 const App: React.FC = () => {
   useLenis(); 
   return (
     <div className="container">
       {/* <CursorMask /> */}
+      <ScrollProgressCircle />
       <Navbar />
       <section id="home" className="section dark">
         <Fade direction="left">
@@ -29,11 +31,12 @@ const App: React.FC = () => {
       <section id="projects" className="section dark">
         <ProjectsPage />
       </section>
-      <section id="contact" className="section dark">
-        <Fade direction="left">
-          <h1>Contact Section</h1>
-        </Fade>
+      <section id="projects" className="section dark">
+        <ProjectsPage />
       </section>
+      <footer className="footer">
+      <p>© {new Date().getFullYear()} Fanirintsoa Mathieu. All rights reserved.</p>
+    </footer>
     </div>
   );
 };

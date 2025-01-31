@@ -6,7 +6,7 @@ const CursorMask: React.FC = () => {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+      setPosition({ x: e.clientX - 10, y: e.clientY - 10 });
     };
 
     window.addEventListener("mousemove", handleMouseMove);

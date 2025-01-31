@@ -20,7 +20,7 @@ const WelcomePage: React.FC = () => {
           <span className="firstname">I'm</span>{" "}
           <div className="underline-name">
             <span>Mathieu</span>
-            <Fade direction="left">
+            <Fade direction="left" triggerOnce>
               <img src="/hand drawn underline.png" alt="Underline" />
             </Fade>
           </div>
