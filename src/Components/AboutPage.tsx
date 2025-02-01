@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutPage.css";
 import { Fade } from "react-awesome-reveal";
+import VScodeScrShot from "./VScodeScrShot";
 
 const AboutPage: React.FC = () => {
   return (
@@ -8,26 +9,27 @@ const AboutPage: React.FC = () => {
       <div className="section-title">
         <Fade direction="right">
           {/* <div className="underline-name"> */}
-            <h1>About</h1>
+          <div className="dot"></div>
+          <h1>About</h1>
 
-            {/* <img src="/hand drawn circle.png" alt="Underline" /> */}
+          {/* <img src="/hand drawn circle.png" alt="Underline" /> */}
           {/* </div> */}
         </Fade>
         <div className="line"></div>
       </div>
       <div className="section-content">
         <div className="left-side">
-          <img className="image-circle" src="/me.jpg" alt="" />
+          <div className="image-wrapper">
+            <img className="image-circle" src="/me.png" alt="Profile" />
+          </div>
         </div>
         <div className="right-side">
-          <p>
-            Hey! I'm Bob, if you haven't already gathered that by now. I'm a
-            painter turned software engineer from Daytona, Florida. I specialize
-            in the backend, primarily Node and Rust, but love building with
-            whatever tools are right for the job. I currently work for Google on
-            Google Photos. I also toss in my ¢2 with the design systems teams
-            from time to time
-          </p>
+          <p>I'm Mathieu, a Malagasy developer and graphic designer with a strong interest in the digital world. 
+            I studied at ISPM and am deeply involved in visual art. Curious and self-taught, 
+            I enjoy creating innovative and visually appealing solutions that blend performance with creativity. 
+            As a freelancer, I’m always eager to take on new projects and adapt to new challenges. 
+            My goal is to turn ideas into unique and impactful digital experiences. 
+            Feel free to reach out if you're looking for someone to bring your vision to life!</p>
         </div>
       </div>
     </div>

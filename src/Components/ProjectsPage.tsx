@@ -7,7 +7,8 @@ const ProjectsPage: React.FC = () => {
     <div className="about-section">
       <div className="section-title">
         <Fade direction="left">
-          <h1>Skills</h1>
+          <div className="dot"></div>
+          <h1>Projects</h1>
         </Fade>
         <div className="line"></div>
         <div className="section-content">

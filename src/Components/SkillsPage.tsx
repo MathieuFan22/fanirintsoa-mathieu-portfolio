@@ -6,10 +6,11 @@ const SkillsPage: React.FC = () => {
   return (
     <div className="about-section">
       <div className="section-title">
+        <div className="line"></div>
         <Fade direction="left">
+        <div className="dot"></div>
           <h1>Skills</h1>
         </Fade>
-        <div className="line"></div>
         <div className="section-content">
           <div className="left-side"></div>
         </div>

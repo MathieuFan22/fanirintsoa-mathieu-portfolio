@@ -1,0 +1,55 @@
+.dot {
+  height: 1rem;
+  width: 1rem;
+  align-items: last baseline;
+  background-color: rgba(255, 0, 0, 0.856);
+  border-radius: 50%;
+  margin-right: 1rem;
+  /* box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.123); */
+}
+.line {
+  flex-grow: 1; 
+  height: 0.5px;
+  background-color: #ffffffa2;
+  margin-left: 2%;
+  margin-right: 2rem;
+}
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.card {
+    width: 100%;
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: "Fira Code", monospace;
+    overflow-x: hidden;
+  }
+  
+  .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    /* background: #2d2d2d;oooooooooo */
+  }
+  
+  .circle {
+    padding: 0 4px;
+  }
+  
+  .box {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .red { background-color: #ff605c; }
+  .yellow { background-color: #ffbd44; }
+  .green { background-color: #00ca4e; }
+  
+  .card__content {
+    padding: 10px;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    white-space: pre-wrap; /* Wraps long lines */
+  }
+  

@@ -27,8 +27,8 @@ const WelcomePage: React.FC = () => {
         </h2>
         <div className="function">Developer / Designer</div>
         <p>
-          I'm a passionate frontend developer who loves exploring new
-          challenges, sharing my knowledge, and constantly expanding my skills
+        Passionate and fascinated by the IT world, creative, and resourceful. 
+        I turn ideas into unique digital experiences
         </p>
         <div className="social-links">
           <a
