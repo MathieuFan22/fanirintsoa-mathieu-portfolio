@@ -3,16 +3,7 @@ import "./SkillsPage.css";
 import { Fade } from "react-awesome-reveal";
 
 const SkillsPage: React.FC = () => {
-  const images = [
-    "/logo.png",
-    "/logo.png",
-    "/logo.png",
-    "/logo.png",
-
-    "/logo.png",
-    "/logo.png",
-  ];
-
+ 
   return (
     <div className="skills-section">
       <div className="section-title">
