@@ -1,30 +1,56 @@
+.skills-section .section-title {
+  display: flex;
+  flex-direction: row;
+  align-items: last baseline;
+  padding-left: 10%;
+}
+.skills-section .section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .hexagon-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hexagon-row {
+  margin-top: -95px;
+  display: flex;
+  gap: 160px;
+}
+.section-content .hexagon{
+  margin-left: -200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(161, 161, 161, 0.63);
+  height: 150px; /* adjust to control the size  */
+  aspect-ratio: 1/cos(30deg);
+  clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+}
+.section-content .skill-logo {
+  width: 100px;
+}
+
+.third-line {
+  margin-top: -90px;
+}
+
+.hexagon-border {
   
-  .hexagon-row {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-  }
-  
-  .hexagon {
-    width: 100px;
-    height: 100px;
-    background-color: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  
-  .hexagon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
+  --b: 5px; /* adjust to control the border  */
+  height: 200px; /* adjust to control the size  */
+  aspect-ratio: 1/cos(30deg);
+  clip-path: 
+    polygon(0 50%,50% -50%,100% 50%,50% 150%,0 50%,
+    var(--b) 50%,
+    calc(25% + var(--b)*cos(60deg)) calc(100% - var(--b)*sin(60deg)),
+    calc(75% - var(--b)*cos(60deg)) calc(100% - var(--b)*sin(60deg)),
+    calc(100% - var(--b)) 50%,
+    calc(75% - var(--b)*cos(60deg)) calc(var(--b)*sin(60deg)),
+    calc(25% + var(--b)*cos(60deg)) calc(var(--b)*sin(60deg)),
+    var(--b) 50%);
+  background: #3B8686;
+}

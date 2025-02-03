@@ -8,42 +8,103 @@ const SkillsPage: React.FC = () => {
     "/logo.png",
     "/logo.png",
     "/logo.png",
-    "/logo.png",
-    "/logo.png",
-    "/logo.png",
-    "/logo.png",
+
     "/logo.png",
     "/logo.png",
   ];
-  const hexagonRows = [[0], [1, 2], [3, 4, 5], [6, 7], [8]];
+
   return (
-    <div className="about-section">
+    <div className="skills-section">
       <div className="section-title">
         <Fade direction="left">
           <div className="dot"></div>
           <h1>Skills</h1>
         </Fade>
         <div className="line"></div>
-        
       </div>
       <div className="section-content">
-          <div className="left-side">
-            <div className="hexagon-container">
-              {hexagonRows.map((row, rowIndex) => (
-                <div key={rowIndex} className="hexagon-row">
-                  {row.map((imageIndex) => (
-                    <div key={imageIndex} className="hexagon">
-                      <img
-                        src={images[imageIndex]}
-                        alt={`hexagon-${imageIndex}`}
-                      />
-                    </div>
-                  ))}
-                </div>
-              ))}
+        <div className="first-line">
+          <div className="hexagon-container">
+            <div className="hexagon-border"></div>
+            <div className="hexagon">
+              <img src="/logo.png" className="skill-logo" />
             </div>
           </div>
         </div>
+
+        <div className="second-line hexagon-row">
+          <div className="hexagon-container">
+            <div className="hexagon-border"></div>
+            <div className="hexagon">
+              <img src="/logo.png" className="skill-logo" />
+            </div>
+          </div>
+
+          <div className="hexagon-container">
+            <div className="hexagon-border"></div>
+            <div className="hexagon">
+              <img src="/logo.png" className="skill-logo" />
+            </div>
+          </div>
+        </div>
+
+        <div className="third-line">
+          <div className="hexagon-container">
+            <div className="hexagon-border"></div>
+            <div className="hexagon">
+              <img src="/logo.png" className="skill-logo" />
+            </div>
+          </div>
+        </div>
+        <div className="second-line hexagon-row">
+          <div className="hexagon-container">
+            <div className="hexagon-border"></div>
+            <div className="hexagon">
+              <img src="/logo.png" className="skill-logo" />
+            </div>
+          </div>
+
+          <div className="hexagon-container">
+            <div className="hexagon-border"></div>
+            <div className="hexagon">
+              <img src="/logo.png" className="skill-logo" />
+            </div>
+          </div>
+        </div>
+
+        <div className="third-line">
+          <div className="hexagon-container">
+            <div className="hexagon-border"></div>
+            <div className="hexagon">
+              <img src="/logo.png" className="skill-logo" />
+            </div>
+          </div>
+        </div>
+        <div className="second-line hexagon-row">
+          <div className="hexagon-container">
+            <div className="hexagon-border"></div>
+            <div className="hexagon">
+              <img src="/logo.png" className="skill-logo" />
+            </div>
+          </div>
+
+          <div className="hexagon-container">
+            <div className="hexagon-border"></div>
+            <div className="hexagon">
+              <img src="/logo.png" className="skill-logo" />
+            </div>
+          </div>
+        </div>
+
+        <div className="third-line">
+          <div className="hexagon-container">
+            <div className="hexagon-border"></div>
+            <div className="hexagon">
+              <img src="/logo.png" className="skill-logo" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

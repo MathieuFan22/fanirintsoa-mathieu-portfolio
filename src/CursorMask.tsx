@@ -6,7 +6,7 @@ const CursorMask: React.FC = () => {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      setPosition({ x: e.clientX - 10, y: e.clientY - 10 });
+      setPosition({ x: e.clientX - 30, y: e.clientY - 30 });
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -15,7 +15,15 @@ const CursorMask: React.FC = () => {
     };
   }, []);
 
-  return <div className="cursor-mask" style={{ left: position.x, top: position.y }} />;
+  return (
+    <div className="cursor-mask" style={{ left: position.x, top: position.y }}>
+      <div className="honeycomb">
+        {Array.from({ length: 7 }).map((_, index) => (
+          <div key={index} className="hexagon"></div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default CursorMask;
