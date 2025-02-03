@@ -62,13 +62,15 @@
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
+  color: inherit;
   font-size: 1.2rem;
-  transition: color 0.3s ease, font-weight 0.3s ease;
+  transition: color 0.3s ease;
+  position: relative;
 }
 
+/* Active link styling */
 .nav-links li a.active {
-  color: rgb(177, 0, 0); /* Active link color */
+  color: rgb(177, 0, 0); /* Highlight color */
   font-weight: bold;
 }
 

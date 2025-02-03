@@ -5,22 +5,19 @@ import { Fade } from "react-awesome-reveal";
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("#home");
+  const [activeSection, setActiveSection] = useState("home"); // Default active is "home"
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
 
-      // Get all sections
+      // Detect which section is currently in view
       const sections = document.querySelectorAll("section");
-      let currentSection = "#home"; // Default section
-
+      let currentSection = "home"; // Default section
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-
-        if (window.scrollY >= sectionTop - 50) {
-          currentSection = `#${section.id}`;
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          currentSection = section.id;
         }
       });
 
@@ -33,15 +30,10 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
-  const handleClick = (id: string) => {
-    setActiveSection(id);
-    setIsOpen(false); // Close the menu on mobile
-  };
-
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
-        <a href="#home" onClick={() => handleClick("#home")}>
+        <a href="#home">
           <div className="brand">
             <img className="logo" src="/logo.png" alt="Logo" />
             <div className="name-logo">
@@ -63,14 +55,17 @@ const Navbar: React.FC = () => {
 
         {/* Navigation Links */}
         <ul className={`nav-links ${isOpen ? "active" : "inactive"}`}>
-          {["#home", "#about", "#skills", "#projects", "#contact"].map((id) => (
-            <li key={id}>
+          {["home", "about", "skills", "projects", "contact"].map((section) => (
+            <li key={section}>
               <a
-                href={id}
-                className={activeSection === id ? "active" : ""}
-                onClick={() => handleClick(id)}
+                href={`#${section}`}
+                className={activeSection === section ? "active" : ""}
+                onClick={() => {
+                  setActiveSection(section);
+                  setIsOpen(false);
+                }}
               >
-                {id.replace("#", "").charAt(0).toUpperCase() + id.slice(2)}
+                {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
             </li>
           ))}
