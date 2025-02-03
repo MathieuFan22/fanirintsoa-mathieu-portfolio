@@ -1,6 +1,7 @@
 import React from "react";
 import "./SkillsPage.css";
 import { Fade } from "react-awesome-reveal";
+import HexagonContainer from "./HexagonContainer";
 
 const SkillsPage: React.FC = () => {
  
@@ -15,85 +16,34 @@ const SkillsPage: React.FC = () => {
       </div>
       <div className="section-content">
         <div className="first-line">
-          <div className="hexagon-container">
-            <div className="hexagon-border"></div>
-            <div className="hexagon">
-              <img src="/logo.png" className="skill-logo" />
-            </div>
-          </div>
+          <HexagonContainer />
         </div>
 
         <div className="second-line hexagon-row">
-          <div className="hexagon-container">
-            <div className="hexagon-border"></div>
-            <div className="hexagon">
-              <img src="/logo.png" className="skill-logo" />
-            </div>
-          </div>
-
-          <div className="hexagon-container">
-            <div className="hexagon-border"></div>
-            <div className="hexagon">
-              <img src="/logo.png" className="skill-logo" />
-            </div>
-          </div>
+          <HexagonContainer />
+          <HexagonContainer />
         </div>
 
         <div className="third-line">
-          <div className="hexagon-container">
-            <div className="hexagon-border"></div>
-            <div className="hexagon">
-              <img src="/logo.png" className="skill-logo" />
-            </div>
-          </div>
+          <HexagonContainer />
         </div>
         <div className="second-line hexagon-row">
-          <div className="hexagon-container">
-            <div className="hexagon-border"></div>
-            <div className="hexagon">
-              <img src="/logo.png" className="skill-logo" />
-            </div>
-          </div>
+          <HexagonContainer />
 
-          <div className="hexagon-container">
-            <div className="hexagon-border"></div>
-            <div className="hexagon">
-              <img src="/logo.png" className="skill-logo" />
-            </div>
-          </div>
+          <HexagonContainer />
         </div>
 
         <div className="third-line">
-          <div className="hexagon-container">
-            <div className="hexagon-border"></div>
-            <div className="hexagon">
-              <img src="/logo.png" className="skill-logo" />
-            </div>
-          </div>
+          <HexagonContainer />
         </div>
         <div className="second-line hexagon-row">
-          <div className="hexagon-container">
-            <div className="hexagon-border"></div>
-            <div className="hexagon">
-              <img src="/logo.png" className="skill-logo" />
-            </div>
-          </div>
+          <HexagonContainer />
 
-          <div className="hexagon-container">
-            <div className="hexagon-border"></div>
-            <div className="hexagon">
-              <img src="/logo.png" className="skill-logo" />
-            </div>
-          </div>
+          <HexagonContainer />
         </div>
 
         <div className="third-line">
-          <div className="hexagon-container">
-            <div className="hexagon-border"></div>
-            <div className="hexagon">
-              <img src="/logo.png" className="skill-logo" />
-            </div>
-          </div>
+          <HexagonContainer />
         </div>
       </div>
     </div>
