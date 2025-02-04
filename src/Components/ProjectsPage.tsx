@@ -12,7 +12,9 @@ const ProjectsPage: React.FC = () => {
         </Fade>
         <div className="line"></div>
         <div className="section-content">
-          <div className="left-side"></div>
+          <div className="left-side">
+          
+          </div>
         </div>
       </div>
     </div>

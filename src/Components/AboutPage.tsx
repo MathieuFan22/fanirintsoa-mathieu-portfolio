@@ -16,6 +16,7 @@ const AboutPage: React.FC = () => {
         </Fade>
         <div className="line"></div>
       </div>
+      <Fade direction="right" >
       <div className="section-content">
         <div className="left-side">
           <div className="image-wrapper">
@@ -31,6 +32,7 @@ const AboutPage: React.FC = () => {
             Feel free to reach out if you're looking for someone to bring your vision to life!</p>
         </div>
       </div>
+      </Fade>
     </div>
   );
 };

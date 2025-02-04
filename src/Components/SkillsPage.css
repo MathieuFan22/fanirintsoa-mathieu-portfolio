@@ -1,5 +1,4 @@
 .skills-section .section-title {
-
  
   display: flex;
   flex-direction: row;
@@ -13,6 +12,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .hexagon-container {
   cursor: pointer;
   display: flex;
@@ -20,33 +20,10 @@
   align-items: center;
   transition: all .5s ease-in-out;
 }
-.hexagon-row {
-  margin-top: -95px;
-  display: flex;
-  gap: 160px;
-}
-.section-content .hexagon{
-  margin-left: -200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(161, 161, 161, 0.63);
-  height: 150px; /* adjust to control the size  */
-  aspect-ratio: 1/cos(30deg);
-  clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
-}
-.section-content .skill-logo {
-  width: 100px;
-}
-
-.third-line {
-  margin-top: -90px;
-}
-
 .hexagon-border {
-  
-  --b: 5px; /* adjust to control the border  */
-  height: 200px; /* adjust to control the size  */
+    
+  --b: 1px; /* adjust to control the border  */
+  height: 120px; /* adjust to control the size  */
   aspect-ratio: 1/cos(30deg);
   clip-path: 
     polygon(0 50%,50% -50%,100% 50%,50% 150%,0 50%,
@@ -59,9 +36,38 @@
     var(--b) 50%);
   background: #3B8686;
 }
+.section-content .hexagon{
+  height: 90px; /* adjust to control the size  */
+  margin-left: -120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  aspect-ratio: 1/cos(30deg);
+  clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+}
+.section-content .skill-logo {
+  width: 70px;
+  transition: all .1s ease-in-out;
+}
+.hexagon-row {
+  margin-top: -57px;
+  display: flex;
+  gap: 100px;
+}
+
+
+
+.third-line {
+  margin-top: -53px;
+}
+
+
 .hexagon-container:hover {
   transform: scale(1.05);
   transition: all .1s ease-in-out;
+  /* filter: drop-shadow(0px 0px 15px rgba(59, 134, 134, 0.75)); */
+  filter: drop-shadow(0px 0px 20px rgb(216, 13, 13));
 }
 
 @media (max-width: 768px) {

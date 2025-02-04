@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./WelcomePage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -10,8 +10,11 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { Fade } from "react-awesome-reveal";
+import HackerText from "./HackerStyleText";
+
 
 const WelcomePage: React.FC = () => {
+ 
   return (
     <section className="welcome-section">
       <div className="left-side">
@@ -19,7 +22,7 @@ const WelcomePage: React.FC = () => {
         <h2>
           <span className="firstname">I'm</span>{" "}
           <div className="underline-name">
-            <span>Mathieu</span>
+            <span><HackerText text="Mathieu" delay={100} randomCycleDuration={200}/></span>
             <Fade direction="left" triggerOnce>
               <img src="/hand drawn underline.png" alt="Underline" />
             </Fade>

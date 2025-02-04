@@ -131,3 +131,20 @@
     font-size: 1.5rem;
   }
 }
+
+
+
+.text-animation-char {
+  display: inline-block;
+  opacity: 0;
+  animation: reveal 0.5s forwards;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
