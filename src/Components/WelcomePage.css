@@ -53,6 +53,7 @@
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  width: 60%;
 }
 
 .social-links {
@@ -97,7 +98,7 @@
 
 @media (max-width: 768px) {
   .welcome-section {
-    padding-top: 300px;
+    padding-top: 200px;
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 8%;
@@ -107,6 +108,7 @@
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    width: 100%;
   }
   .left-side .function {
     font-family: "Modernist-Regular";

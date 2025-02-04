@@ -115,9 +115,8 @@
     flex-direction: column;
     /* width: 100%; */
   }
-  .about-section .left-side {
-    /* margin: -3%; */
-    width: 95%;
+  .about-section .left-side, .about-section .right-side {
+    width: 87%;
   /* background-color: red; */
   display: flex;
   justify-content: center;
@@ -125,7 +124,7 @@
 }
 
   .image-circle {
-    width: 400px;
+    width: 370px;
     margin-left: -3%;
   }
 }
