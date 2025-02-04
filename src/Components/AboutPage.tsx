@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
             <p className="intro">
               <span className="alinea">I</span> am Fanirintsoa Mathieu, a
               Malagasy developer and graphic designer based in Antananarivo.
-              Currently pursuing higher education at ISPM Antsobolo in Computer
+              Currently pursuing higher education at <a href="https://www.facebook.com/ISPM2014" target="_blank" className="link">ISPM Antsobolo</a> ISPM Antsobolo in Computer
               Science, Applied Statistics, and Artificial Intelligence. Besides
               my studies, I also work as a frontend developer and graphic
               designer freelancer.
@@ -37,6 +37,7 @@ const AboutPage: React.FC = () => {
             <div className="image-wrapper">
               <img className="image-circle" src="/me.png" alt="Profile" />
             </div>
+            <div className="whatido-title">What I offer </div>
             <div className="whatido">
               <div className="whatido-item dev">Mobile App</div>
               <div className="whatido-item dev">Desktop App</div>

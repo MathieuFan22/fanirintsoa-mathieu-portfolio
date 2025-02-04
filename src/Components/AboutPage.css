@@ -45,8 +45,11 @@
   justify-content: center;
   border-radius: 6px; /* Rounded corners */
   background-color: #333; /* Dark background for the box */
-  color: white;
+  color: #ddd;
   margin-right: 10px;
+}
+.link {
+  color: rgba(255, 255, 0, 0.712);
 }
 
 .about-section h1 {
@@ -75,7 +78,12 @@
   z-index: -1; /* Places it below the image */
 }
 
-
+.whatido-title {
+  font-family: "Strretch";
+  font-size: x-large;
+  color: #d4d4d4;
+  margin: 20px 0;
+}
 .whatido {
   display: flex;
   flex-wrap: wrap;
@@ -84,10 +92,17 @@
 }
 
 .whatido-item {
-  border: 1px solid red;
   padding: 5px 10px ;
   border-radius: 5px;
   background-color: #0a0a0a70;
+
+  
+}
+.dev {
+  border: 1px solid rgba(255, 0, 0, 0.795);
+}
+.design {
+  border: 1px solid rgba(255, 255, 0, 0.712);
 }
 
 @media (max-width: 768px) {
