@@ -1,5 +1,4 @@
 .about-section {
-  
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -8,7 +7,6 @@
 .about-section .underline-name img {
   top: 20px;
   height: 60%;
-  
 }
 .about-section .section-title {
   display: flex;
@@ -23,7 +21,6 @@
   flex-direction: row;
 }
 
-
 .about-section .left-side,
 .about-section .right-side {
   display: flex;
@@ -31,7 +28,6 @@
   padding-left: 2rem;
   margin-right: 3%;
   font-family: "Modernist-Regular";
- 
 }
 .intro {
   text-align: justify;
@@ -64,7 +60,7 @@
 
 .image-circle {
   width: 300px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .image-wrapper::before {
@@ -72,7 +68,7 @@
   position: absolute;
   top: 270px; /* Moves the white circle up */
   right: 230px; /* Moves the white circle to the right */
-  width: 200px; 
+  width: 200px;
   height: 100px;
   background-color: rgba(189, 0, 0, 0.5);
   filter: blur(30px);
@@ -91,15 +87,12 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: start;
-
 }
 
 .whatido-item {
-  padding: 5px 10px ;
+  padding: 5px 10px;
   border-radius: 5px;
   background-color: #0a0a0a70;
-
-  
 }
 .dev {
   border: 1px solid rgba(255, 0, 0, 0.795);
@@ -109,33 +102,34 @@
 }
 @media (min-width: 1200px) {
   .whatido {
-width: 40%;
+    width: 40%;
   }
 }
 @media (max-width: 768px) {
-    .about-section {
-        margin-top: 50%;
-    }
-    .whatido {
-      width: 100%;
-        }
-  .about-section .section-content{
+  .about-section {
+    margin-top: 50%;
+  }
+  .whatido {
+    width: 100%;
+  }
+  .about-section .section-content {
     margin: 3%;
     display: flex;
     flex-direction: column;
     /* width: 100%; */
   }
-  .about-section .left-side, .about-section .right-side {
+  .about-section .left-side,
+  .about-section .right-side {
     width: 87%;
-  /* background-color: red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .image-circle {
     width: 300px;
-    margin-left: -3%;
+    /* margin-left: -3%; */
   }
 }
 /* @media (max-width: 960px) {
