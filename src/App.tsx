@@ -1,4 +1,3 @@
-import { Fade } from "react-awesome-reveal";
 import Navbar from "./Components/NavBar";
 import "./App.css";
 import "./ui.css";
@@ -66,9 +65,8 @@ const App: React.FC = () => {
       <ScrollProgressCircle />
       <Navbar />
       <section id="home" className="section dark">
-        <Fade direction="left">
+      
           <WelcomePage />
-        </Fade>
       </section>
       <section id="about" className="section dark">
         <AboutPage />

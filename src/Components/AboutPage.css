@@ -63,6 +63,7 @@
 
 .image-circle {
   width: 300px;
+  border-radius: 5px;
 }
 
 .image-wrapper::before {
@@ -89,6 +90,7 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: start;
+
 }
 
 .whatido-item {
@@ -104,11 +106,18 @@
 .design {
   border: 1px solid rgba(255, 255, 0, 0.712);
 }
-
+@media (min-width: 1200px) {
+  .whatido {
+width: 40%;
+  }
+}
 @media (max-width: 768px) {
     .about-section {
         margin-top: 50%;
     }
+    .whatido {
+      width: 100%;
+        }
   .about-section .section-content{
     margin: 3%;
     display: flex;
@@ -124,7 +133,7 @@
 }
 
   .image-circle {
-    width: 370px;
+    width: 300px;
     margin-left: -3%;
   }
 }

@@ -5,8 +5,8 @@
   padding: 3rem;
   padding-left: 12%;
   color: #eee;
-  min-height: 90vh;
   font-family: "Modernist-Regular";
+  height: 100vh;
 }
 .underline-name {
   position: relative;
@@ -112,6 +112,8 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 8%;
+    height: 50vh;
+    
   }
   .left-side p,
   .right-side p {
@@ -128,6 +130,8 @@
   }
   .welcome-section .left-side {
     width: 90%;
+    
+    /* background-color: aqua; */
     /* border: 2px solid green; */
   }
 

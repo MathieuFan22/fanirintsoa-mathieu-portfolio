@@ -1,21 +1,5 @@
 /* src/index.css (or Tailwind for styling) */
-@font-face {
-  font-family: "Neue-Machina-Bold";
-  src: url("/assets/Fonts/NeueMachina-Ultrabold.otf");
-}
-@font-face {
-  font-family: "Neue-Machina-Regular";
-  src: url("/assets/Fonts/NeueMachina-Regular.otf");
-}
 
-@font-face {
-  font-family: "Neue-Machina-Light";
-  src: url("/assets/Fonts/NeueMachina-Light.otf");
-}
-@font-face {
-  font-family: "Modernist-Bold";
-  src: url("/assets/Fonts/Sk-Modernist-Bold.otf");
-}
 @font-face {
   font-family: "Modernist-Regular";
   src: url("/assets/Fonts/Sk-Modernist-Regular.otf");
@@ -35,9 +19,11 @@
 }
 @font-face {
   font-family: "Strretch";
-  src: url("/assets/Fonts/Strretch.otf");
-  font-stretch: 150%; 
+  src: url("/assets/fonts/Strretch.woff2") format("woff2"),
+       url("/assets/fonts/Strretch.woff") format("woff");
+  font-display: swap;
 }
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;

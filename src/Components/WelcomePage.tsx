@@ -22,11 +22,13 @@ const WelcomePage: React.FC = () => {
           <span className="firstname">I'm</span>{" "}
           <div className="underline-name">
             <span><HackerText text="Mathieu" delay={100} randomCycleDuration={200}/></span>
+            
             <Fade direction="left" triggerOnce>
               <img src="/hand drawn underline.png" alt="Underline" />
             </Fade>
           </div>
         </h2>
+        <Fade direction="left" >
         <div className="function">Developer / Designer</div>
         <p>
         Passionate and fascinated by the IT world, creative, and resourceful. 
@@ -72,6 +74,7 @@ const WelcomePage: React.FC = () => {
         <div className="download-resume">
           <button>My resume <span className="padding"></span><FontAwesomeIcon icon={faArrowDown} className="up-right-icon"/></button>
         </div>
+        </Fade>
       </div>
     </section>
   );
