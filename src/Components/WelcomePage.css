@@ -23,14 +23,24 @@
   width: 110%; /* Adjust width to match the text */
   pointer-events: none; /* Prevent interactions */
 }
-
+.padding {
+  padding-left: 10px;
+}
+.up-right-icon {
+  position: absolute;
+  width: 0.6rem;
+  transform: rotate(220deg);
+  margin-top: 2px;
+  margin-left: 2px;
+  color: #ddd;
+}
 .left-side,
 .right-side {
   width: 50%;
 }
 .left-side .function {
   font-size: 2rem;
-  color: rgb(179, 0, 0);
+  color: #ddd;
   margin-bottom: 20px;
 }
 
@@ -53,7 +63,7 @@
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  width: 60%;
+  width: 90%;
 }
 
 .social-links {
@@ -86,7 +96,7 @@
   padding: 12px 24px;
   border-radius: 8px;
   font-family: "Modernist-Regular";
-  border: 2px solid rgba(255, 0, 0, 0.315);
+  border: 2px solid rgba(238, 255, 0, 0.637);
   font-size: 1rem;
   transition: all 0.3s ease;
 }

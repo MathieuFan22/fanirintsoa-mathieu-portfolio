@@ -62,14 +62,14 @@
 }
 
 .image-circle {
-  width: 400px;
+  width: 300px;
 }
 
 .image-wrapper::before {
   content: "";
   position: absolute;
-  top: 250px; /* Moves the white circle up */
-  right: 100px; /* Moves the white circle to the right */
+  top: 270px; /* Moves the white circle up */
+  right: 230px; /* Moves the white circle to the right */
   width: 200px; 
   height: 100px;
   background-color: rgba(189, 0, 0, 0.5);
@@ -79,7 +79,7 @@
 }
 
 .whatido-title {
-  font-family: "Strretch";
+  font-family: "Modernist-Bold";
   font-size: x-large;
   color: #d4d4d4;
   margin: 20px 0;

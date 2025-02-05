@@ -1,6 +1,6 @@
 import "./WelcomePage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowUp19, faArrowUp91, faArrowUpRightDots, faArrowUpRightFromSquare, faDownload } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
   faGithub,
@@ -70,7 +70,7 @@ const WelcomePage: React.FC = () => {
           </a>
         </div>
         <div className="download-resume">
-          <button><FontAwesomeIcon className="icon" icon={faDownload} />Download resume</button>
+          <button>My resume <span className="padding"></span><FontAwesomeIcon icon={faArrowDown} className="up-right-icon"/></button>
         </div>
       </div>
     </section>
