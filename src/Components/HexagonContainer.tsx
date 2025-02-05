@@ -1,11 +1,15 @@
+interface SourceProps {
+  url: string;
+}
 
-
-function HexagonContainer() {
+const HexagonContainer: React.FC<SourceProps> = ({
+  url
+}) => {
   return (
     <div className="hexagon-container">
       <div className="hexagon-border"></div>
       <div className="hexagon">
-        <img src="/logo.png" className="skill-logo" />
+        <img src={url} className="skill-logo" />
       </div>
     </div>
   );

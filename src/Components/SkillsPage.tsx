@@ -16,35 +16,58 @@ const SkillsPage: React.FC = () => {
       </div>
       <div className="section-content">
         <div className="first-line">
-          <HexagonContainer />
+          <HexagonContainer url={"/Skills/html.png"}/>
         </div>
 
         <div className="second-line hexagon-row">
-          <HexagonContainer />
-          <HexagonContainer />
+          <HexagonContainer url={"/Skills/css.png"}/>
+          <HexagonContainer url={"/Skills/js.png"}/>
         </div>
 
         <div className="third-line">
-          <HexagonContainer />
+          <HexagonContainer url={"/Skills/react.png"}/>
         </div>
         <div className="second-line hexagon-row">
-          <HexagonContainer />
+          <HexagonContainer url={"/Skills/flutter.png"}/>
 
-          <HexagonContainer />
+          <HexagonContainer url={"/Skills/nest.png"}/>
         </div>
 
         <div className="third-line">
-          <HexagonContainer />
+          <HexagonContainer url={"/Skills/mongo.png"}/>
         </div>
         <div className="second-line hexagon-row">
-          <HexagonContainer />
+          <HexagonContainer url={"/Skills/ai.png"}/>
 
-          <HexagonContainer />
+          <HexagonContainer url={"/Skills/ps.png"}/>
         </div>
 
         <div className="third-line">
-          <HexagonContainer />
+          <HexagonContainer url={"/Skills/figma.png"}/>
         </div>
+<div className="margin"></div>
+<div className="first-line">
+          <HexagonContainer url={"/Skills/html.png"}/>
+        </div>
+
+        <div className="second-line hexagon-row">
+          <HexagonContainer url={"/Skills/css.png"}/>
+          <HexagonContainer url={"/Skills/js.png"}/>
+        </div>
+
+        <div className="third-line">
+          <HexagonContainer url={"/Skills/react.png"}/>
+        </div>
+        <div className="second-line hexagon-row">
+          <HexagonContainer url={"/Skills/flutter.png"}/>
+
+          <HexagonContainer url={"/Skills/nest.png"}/>
+        </div>
+
+        <div className="third-line">
+          <HexagonContainer url={"/Skills/mongo.png"}/>
+        </div>
+        
       </div>
     </div>
   );

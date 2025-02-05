@@ -22,8 +22,8 @@
 }
 .hexagon-border {
     
-  --b: 1px; /* adjust to control the border  */
-  height: 120px; /* adjust to control the size  */
+  --b: 0.05rem; /* adjust to control the border  */
+  height: 90px; /* adjust to control the size  */
   aspect-ratio: 1/cos(30deg);
   clip-path: 
     polygon(0 50%,50% -50%,100% 50%,50% 150%,0 50%,
@@ -34,11 +34,11 @@
     calc(75% - var(--b)*cos(60deg)) calc(var(--b)*sin(60deg)),
     calc(25% + var(--b)*cos(60deg)) calc(var(--b)*sin(60deg)),
     var(--b) 50%);
-  background: #3B8686;
+  background: #424242;
 }
 .section-content .hexagon{
   height: 90px; /* adjust to control the size  */
-  margin-left: -120px;
+  margin-left: -104px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,19 +47,21 @@
   clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
 }
 .section-content .skill-logo {
-  width: 70px;
+  width: 40px;
   transition: all .1s ease-in-out;
 }
 .hexagon-row {
-  margin-top: -57px;
+  margin-top: -40px;
   display: flex;
-  gap: 100px;
+  gap: 70px;
 }
 
 
-
+.hexagon {
+  background-color: rgba(37, 37, 37, 0.295);
+}
 .third-line {
-  margin-top: -53px;
+  margin-top: -43px;
 }
 
 
@@ -74,29 +76,26 @@
   .skills-section {
     margin-top: 100%;
   }
-  .hexagon-row {
-    margin-top: -60px;
+  /* .hexagon-row {
+    margin-top: -50px;
     gap: 100px;
   }
   .section-content .hexagon{
     margin-left: -120px;
    
-    height: 90px; /* adjust to control the size  */
+    height: 90px; 
    
   }
-  .section-content .skill-logo {
-    width: 70px;
-  }
+
   
   .third-line {
-    margin-top: -53px;
+    margin-top: -45px;
   }
   
   .hexagon-border {
     
-    --b: 5px; /* adjust to control the border  */
-    height: 120px; /* adjust to control the size  */
+    --b: 0.1rem; 
     aspect-ratio: 1/cos(30deg);
    
-  }
+  } */
 }
