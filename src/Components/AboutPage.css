@@ -15,6 +15,7 @@
   flex-direction: row;
   align-items: last baseline;
   padding-left: 10%;
+  font-family: "Modernist-Bold", Arial, Helvetica, sans-serif;
 }
 .about-section .section-content {
   margin: 3%;

@@ -19,9 +19,8 @@
 }
 @font-face {
   font-family: "Strretch";
-  src: url("/assets/fonts/Strretch.woff2") format("woff2"),
-       url("/assets/fonts/Strretch.woff") format("woff");
-  font-display: swap;
+  src: url("/assets/Fonts/Strretch.woff");
+  font-stretch: 150%; 
 }
 body {
   margin: 0;
