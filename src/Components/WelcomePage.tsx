@@ -1,6 +1,6 @@
 import "./WelcomePage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faArrowUp19, faArrowUp91, faArrowUpRightDots, faArrowUpRightFromSquare, faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown} from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
   faGithub,
