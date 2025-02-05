@@ -23,7 +23,6 @@
        url("/assets/fonts/Strretch.woff") format("woff");
   font-display: swap;
 }
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
