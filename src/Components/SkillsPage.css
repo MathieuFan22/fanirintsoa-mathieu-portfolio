@@ -55,7 +55,9 @@
   display: flex;
   gap: 70px;
 }
-
+.margin {
+  padding: 50px;
+}
 
 .hexagon {
   background-color: rgba(37, 37, 37, 0.295);
