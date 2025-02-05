@@ -71,6 +71,9 @@
 }
 
 @media (max-width: 768px) {
+  .skills-section {
+    margin-top: 100%;
+  }
   .hexagon-row {
     margin-top: -60px;
     gap: 100px;
