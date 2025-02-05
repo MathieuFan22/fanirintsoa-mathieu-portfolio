@@ -10,8 +10,10 @@ import ProjectsPage from "./Components/ProjectsPage";
 import useLenis from "./useLenis";
 import ScrollProgressCircle from "./ScrollProgressCircle";
 import { useEffect, useState } from "react";
+import Lottie from "lottie-react";
+import animationData from "../public/AnimatedLogo.json";
 const App: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const handleLoad = () => {
@@ -56,7 +58,8 @@ const App: React.FC = () => {
     <div className="container">
             {isLoading ? (
         <div className="loading-screen">
-          <h1>Loading...</h1>
+           <Lottie animationData={animationData} className="lottie-logo" loop={true}  />
+           <p>Wait for assets to load . . . </p>
         </div>
       ) : (
         <>

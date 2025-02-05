@@ -4,7 +4,17 @@ html, body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
 }
-
+.loading-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Modernist-Regular";
+}
+.lottie-logo {
+  width: 200px;
+}
 .section {
   
   min-height: 50vh;
