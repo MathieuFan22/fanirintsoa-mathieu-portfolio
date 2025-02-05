@@ -1,8 +1,6 @@
 import React from "react";
 import "./ProjectsPage.css";
 import { Fade } from "react-awesome-reveal";
-import Lottie from "lottie-react";
-import animationData from "../../public/AnimatedLogo.json";
 
 const ProjectsPage: React.FC = () => {
   return (
@@ -15,7 +13,6 @@ const ProjectsPage: React.FC = () => {
         <div className="line"></div>
         <div className="section-content">
           <div className="left-side">
-          <Lottie animationData={animationData} loop={true} />
           </div>
         </div>
       </div>

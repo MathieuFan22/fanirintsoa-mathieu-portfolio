@@ -8,54 +8,15 @@ import SkillsPage from "./Components/SkillsPage";
 import ProjectsPage from "./Components/ProjectsPage";
 import useLenis from "./useLenis";
 import ScrollProgressCircle from "./ScrollProgressCircle";
-import { useEffect, useState } from "react";
 import Lottie from "lottie-react";
-import animationData from "../public/AnimatedLogo.json";
+import animationData from "./AnimatedLogo.json";
+import useAssetsLoaded from "./useAssestsLoaded";
 const App: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    const handleLoad = () => {
-      setIsLoading(false); // Hide loading screen when everything is ready
-    };
-
-    // Wait for all images to load
-    const images = document.querySelectorAll("img");
-    let loadedImages = 0;
-
-    if (images.length === 0) {
-      handleLoad();
-    } else {
-      images.forEach((img) => {
-        if (img.complete) {
-          loadedImages++;
-        } else {
-          img.onload = () => {
-            loadedImages++;
-            if (loadedImages === images.length) {
-              handleLoad();
-            }
-          };
-          img.onerror = () => {
-            loadedImages++; // Prevent getting stuck if an image fails to load
-            if (loadedImages === images.length) {
-              handleLoad();
-            }
-          };
-        }
-      });
-    }
-
-    // Wait for fonts to load
-    document.fonts.ready.then(handleLoad);
-
-    // Ensure the entire page is loaded
-    window.onload = handleLoad;
-  }, []);
+  const assetsLoaded = useAssetsLoaded();
   useLenis(); 
   return (
     <div className="container">
-            {isLoading ? (
+            {!assetsLoaded ? (
         <div className="loading-screen">
            <Lottie animationData={animationData} className="lottie-logo" loop={true}  />
            <p>Wait for assets to load . . . </p>
