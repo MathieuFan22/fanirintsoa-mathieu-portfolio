@@ -12,29 +12,45 @@ import ScrollProgressCircle from "./ScrollProgressCircle";
 import { useEffect, useState } from "react";
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [loadedImages, setLoadedImages] = useState(0);
-  const [totalImages, setTotalImages] = useState(0);
 
   useEffect(() => {
-    // Wait for fonts to load
-    document.fonts.ready.then(() => {
-      checkIfLoaded();
-    });
+    const handleLoad = () => {
+      setIsLoading(false); // Hide loading screen when everything is ready
+    };
 
-    // Ensure full page is loaded
-    window.onload = checkIfLoaded;
-  }, []);
+    // Wait for all images to load
+    const images = document.querySelectorAll("img");
+    let loadedImages = 0;
 
-  // Callback function for images
-  const onImageLoad = () => {
-    setLoadedImages((prev) => prev + 1);
-  };
-
-  const checkIfLoaded = () => {
-    if (loadedImages >= totalImages) {
-      setIsLoading(false);
+    if (images.length === 0) {
+      handleLoad();
+    } else {
+      images.forEach((img) => {
+        if (img.complete) {
+          loadedImages++;
+        } else {
+          img.onload = () => {
+            loadedImages++;
+            if (loadedImages === images.length) {
+              handleLoad();
+            }
+          };
+          img.onerror = () => {
+            loadedImages++; // Prevent getting stuck if an image fails to load
+            if (loadedImages === images.length) {
+              handleLoad();
+            }
+          };
+        }
+      });
     }
-  };
+
+    // Wait for fonts to load
+    document.fonts.ready.then(handleLoad);
+
+    // Ensure the entire page is loaded
+    window.onload = handleLoad;
+  }, []);
   useLenis(); 
   return (
     <div className="container">
