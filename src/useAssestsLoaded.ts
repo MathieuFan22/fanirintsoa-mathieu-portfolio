@@ -5,38 +5,34 @@ const useAssetsLoaded = () => {
   const [assetsLoaded, setAssetsLoaded] = useState(false);
 
   useEffect(() => {
-    // Example: Check if images are loaded
-    const images = document.querySelectorAll('img');
-    let loadedImages = 0;
+    // Function to check if all images are loaded
+    const checkImagesLoaded = () => {
+      const images = Array.from(document.querySelectorAll('img'));
+      if (images.length === 0) return Promise.resolve(); // No images to load
 
-    const imageLoaded = () => {
-      loadedImages++;
-      if (loadedImages === images.length) {
-        setAssetsLoaded(true);
-      }
+      return Promise.all(
+        images.map(
+          (img) =>
+            new Promise<void>((resolve) => {
+              if (img.complete) resolve();
+              else {
+                img.addEventListener('load', () => resolve());
+                img.addEventListener('error', () => resolve()); // Handle errors
+              }
+            }),
+        ),
+      );
     };
 
-    images.forEach((img) => {
-      if (img.complete) {
-        imageLoaded();
-      } else {
-        img.addEventListener('load', imageLoaded);
-        img.addEventListener('error', imageLoaded); // Handle errors
-      }
-    });
+    // Function to check if all fonts are loaded
+    const checkFontsLoaded = () => {
+      return document.fonts.ready;
+    };
 
-    // Example: Check if fonts are loaded
-    document.fonts.ready.then(() => {
+    // Wait for both images and fonts to load
+    Promise.all([checkImagesLoaded(), checkFontsLoaded()]).then(() => {
       setAssetsLoaded(true);
     });
-
-    // Cleanup
-    return () => {
-      images.forEach((img) => {
-        img.removeEventListener('load', imageLoaded);
-        img.removeEventListener('error', imageLoaded);
-      });
-    };
   }, []);
 
   return assetsLoaded;
