@@ -31,7 +31,10 @@ const useAssetsLoaded = () => {
 
     // Wait for both images and fonts to load
     Promise.all([checkImagesLoaded(), checkFontsLoaded()]).then(() => {
-      setAssetsLoaded(true);
+      setTimeout(() => {
+        
+        setAssetsLoaded(true);
+      }, 2000);
     });
   }, []);
 
