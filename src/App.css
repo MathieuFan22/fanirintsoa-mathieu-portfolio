@@ -25,6 +25,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   scroll-snap-align: start;
+  /* transform: scale(1.1); */
   /* align-items: center; */
 }
 .section h1 {

@@ -3,7 +3,6 @@ import "./App.css";
 import "./ui.css";
 import WelcomePage from "./Components/WelcomePage";
 import AboutPage from "./Components/AboutPage";
-import InfiniteSlider from "./Components/InfiniteSlider";
 import SkillsPage from "./Components/SkillsPage";
 import ProjectsPage from "./Components/ProjectsPage";
 import useLenis from "./useLenis";
@@ -42,7 +41,7 @@ const App: React.FC = () => {
       <section id="skills" className="section dark">
         <SkillsPage />
       </section>
-      <InfiniteSlider />
+     
       <section id="projects" className="section dark">
         <ProjectsPage />
       </section>
