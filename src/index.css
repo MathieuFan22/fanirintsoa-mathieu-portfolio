@@ -2,15 +2,15 @@
 
 @font-face {
   font-family: "Modernist-Regular";
-  src: url("/assets/Fonts/Sk-Modernist-Regular.otf");
+  src: url("/assets/Fonts/Sk-Modernist-Regular.woff");
 }
 @font-face {
   font-family: "Modernist-Bold";
-  src: url("/assets/Fonts/Sk-Modernist-Bold.otf");
+  src: url("/assets/Fonts/Sk-Modernist-Bold.woff");
 }
 @font-face {
   font-family: "Modernist-Mono";
-  src: url("/assets/Fonts/Sk-Modernist-Mono.otf");
+  src: url("/assets/Fonts/Sk-Modernist-Mono.woff");
 }
 @font-face {
   font-family: "Poppins-Regular";

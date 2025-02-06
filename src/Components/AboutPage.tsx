@@ -1,7 +1,6 @@
 import React from "react";
 import "./AboutPage.css";
 import { Fade } from "react-awesome-reveal";
-
 const AboutPage: React.FC = () => {
   return (
     <div className="about-section">
