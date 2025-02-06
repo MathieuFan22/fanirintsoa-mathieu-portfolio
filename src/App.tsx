@@ -11,9 +11,16 @@ import ScrollProgressCircle from "./ScrollProgressCircle";
 import Lottie from "lottie-react";
 import animationData from "./AnimatedLogo.json";
 import useAssetsLoaded from "./useAssestsLoaded";
+import { useEffect, useState } from "react";
 const App: React.FC = () => {
   const assetsLoaded = useAssetsLoaded();
+  const [opacity, setopacity] = useState(0);
   useLenis(); 
+  useEffect(() => {
+    setTimeout(() => {
+      setopacity(1);
+    }, 2000);
+  }, []);
   return (
     <div className="container">
             {!assetsLoaded ? (
@@ -22,7 +29,7 @@ const App: React.FC = () => {
            <p>Wait for assets to load . . . </p>
         </div>
       ) : (
-        <>
+        <div style={{opacity:opacity}}>
       <ScrollProgressCircle />
       <Navbar />
       <section id="home" className="section dark">
@@ -45,7 +52,7 @@ const App: React.FC = () => {
       <footer className="footer">
       <p>© {new Date().getFullYear()} Fanirintsoa Mathieu. All rights reserved.</p>
     </footer>
-    </>
+    </div>
   )}
     </div>
   );

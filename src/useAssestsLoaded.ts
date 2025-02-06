@@ -34,7 +34,7 @@ const useAssetsLoaded = () => {
       setTimeout(() => {
         
         setAssetsLoaded(true);
-      }, 4000);
+      }, 5000);
     });
   }, []);
 
