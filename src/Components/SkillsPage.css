@@ -1,5 +1,8 @@
+.skills-section {
+  padding-top: 110%
+}
+
 .skills-section .section-title {
- 
   display: flex;
   flex-direction: row;
   align-items: last baseline;
