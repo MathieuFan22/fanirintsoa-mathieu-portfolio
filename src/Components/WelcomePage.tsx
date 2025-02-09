@@ -17,7 +17,7 @@ const WelcomePage: React.FC = () => {
   return (
     <section className="welcome-section">
       <div className="left-side">
-        <h1>HELLOO</h1>
+        <h1>HELLOO <span className="world">WOORLD</span></h1>
         <h2>
           <span className="firstname">I'm</span>{" "}
           <div className="underline-name">

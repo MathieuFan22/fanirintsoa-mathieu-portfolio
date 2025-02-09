@@ -48,7 +48,13 @@
   font-size: 3rem;
   margin-bottom: 1rem;
   font-family: "Strretch", Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
+.world {
+  font-size: 2.64rem;
+}
+
 .left-side .firstname {
   font-family: "Poppins-Regular";
   font-weight: 100;
@@ -90,13 +96,13 @@
   size: 0.7rem;
 }
 .download-resume button {
-  background: rgba(153, 42, 42, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
   font-family: "Modernist-Regular";
-  border: 2px solid rgba(238, 255, 0, 0.637);
+  border: 2px solid rgb(156, 56, 56);
   font-size: 1rem;
   transition: all 0.3s ease;
 }
@@ -115,6 +121,7 @@
     height: 50vh;
     
   }
+ 
   .left-side p,
   .right-side p {
     font-size: 1.1rem;
@@ -145,6 +152,9 @@
 
   .welcome-section .left-side h1 {
     font-size: 1.7rem;
+  }
+  .world {
+    font-size: 1.5rem;
   }
 }
 
