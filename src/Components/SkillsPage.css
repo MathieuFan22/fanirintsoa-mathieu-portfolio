@@ -1,5 +1,5 @@
 .skills-section {
-  /* padding-top: 110% */
+  padding-top: 100px;
 }
 
 .skills-section .section-title {
@@ -80,7 +80,7 @@
 
 @media (max-width: 768px) {
   .skills-section {
-    margin-top: 100%;
+    /* margin-top: 100%; */
   }
   /* .hexagon-row {
     margin-top: -50px;

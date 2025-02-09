@@ -17,14 +17,14 @@ html, body {
 }
 .section {
   
-  min-height: 50vh;
+  /* min-height: 50vh; */
   /* max-height: 120vh; */
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   /* transform: scale(1.1); */
   /* align-items: center; */
 }

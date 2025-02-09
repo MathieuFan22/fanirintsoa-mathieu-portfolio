@@ -7,7 +7,7 @@
   background-color: #ffffff17;
   padding: 0.5rem;
   backdrop-filter: blur(10px);
-  transform: rotate(-5deg);
+  /* transform: rotate(-5deg); */
 }
 
 .slider {
@@ -25,7 +25,7 @@
   background-color: rgb(153, 153, 153);
 }
 .text-item {
-  font-size: 24px;
+  font-size: 1.2rem;
   border-radius: 5px;
   color: rgb(153, 153, 153);
   font-family: "Modernist-Regular";

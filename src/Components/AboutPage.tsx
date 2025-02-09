@@ -17,7 +17,7 @@ const AboutPage: React.FC = () => {
       </div>
       <div className="section-content">
         <div className="left-side">
-          <Fade direction="up" fraction={0.1} triggerOnce={true}>
+          <Fade direction="up" fraction={0.1} triggerOnce={false} cascade>
             <p className="intro">
               <span className="alinea">I</span> am Fanirintsoa Mathieu, a
               Malagasy developer and graphic designer based in Antananarivo.
