@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProjectsPage.css";
 import { Fade } from "react-awesome-reveal";
+import ProjectCards from "./ProjectCards";
 
 const ProjectsPage: React.FC = () => {
   return (
@@ -11,8 +12,10 @@ const ProjectsPage: React.FC = () => {
           <h1>Projects</h1>
         </Fade>
         <div className="line"></div>
-        <div className="section-content">
+        <div className="section-content-project">
           <div className="left-side">
+
+          <ProjectCards />
           </div>
         </div>
       </div>
