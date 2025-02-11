@@ -45,9 +45,9 @@ const App: React.FC = () => {
       <section id="projects" className="section dark">
         <ProjectsPage />
       </section>
-      <section id="projects" className="section dark">
+      {/* <section id="projects" className="section dark">
         <ProjectsPage />
-      </section>
+      </section> */}
       <footer className="footer">
       <p>© {new Date().getFullYear()} Fanirintsoa Mathieu. All rights reserved.</p>
     </footer>

@@ -12,11 +12,14 @@ const ProjectsPage: React.FC = () => {
           <h1>Projects</h1>
         </Fade>
         <div className="line"></div>
-        <div className="section-content-project">
-          <div className="left-side">
-
+      </div>
+      <div className="section-content-project">
+        <div className="left-side">
           <ProjectCards />
-          </div>
+          <ProjectCards />
+          <ProjectCards />
+          <ProjectCards />
+          <ProjectCards />
         </div>
       </div>
     </div>
