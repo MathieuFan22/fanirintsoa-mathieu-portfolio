@@ -3,27 +3,46 @@
     justify-content: center;
     flex-direction: row;
 }
+.card-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: last baseline;
+}
+.section-content-project .left-side {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+    justify-content: center; /* Centers the grid items horizontally */
+    align-items: center; /* Centers items vertically if needed */
+}
+
 .card-container {
-    width: 20%;
+    
     display: flex;
     flex-direction: column;
-    background-color: white;
-    align-items: center;
-    
+    width: 100%;
+    max-width: 400px;
 }
+
 .card-image {
-    width: 90%;
+    background-color: rgb(48, 48, 48);
+    padding: 30px 20px 0px 20px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0  ;
 }
 
 .card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px 5px 0 0;
 }
-.section-content-project .left-side {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+
+@media (max-width: 760px) {
+    .section-content-project .left-side {
+        grid-template-columns: 1fr; /* One card per row when width is under 760px */
+    }
 }
