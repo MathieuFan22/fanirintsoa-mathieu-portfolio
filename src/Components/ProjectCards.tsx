@@ -11,7 +11,6 @@ function ProjectCards() {
         <div className="project-title">
           <h3>Project Title</h3>
         </div>
-        <div className="line"></div>
         <div className="github-link">
           <a
             href="https://github.com/MathieuFan22"
