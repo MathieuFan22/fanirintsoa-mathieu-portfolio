@@ -9,7 +9,7 @@ function ProjectCards() {
       </div>
       <div className="card-title">
         <div className="project-title">
-          <h3>Project Title</h3>
+          <h3>My Portfolio</h3>
         </div>
         <div className="github-link">
           <a
@@ -26,10 +26,7 @@ function ProjectCards() {
       </div>
       <div className="project-description">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          reprehenderit odio esse sapiente obcaecati autem suscipit a excepturi
-          ea quia, nisi nihil, sed accusamus totam eius perspiciatis officiis
-          porro saepe.
+        A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.
         </p>
       </div>
     </div>
