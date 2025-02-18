@@ -59,16 +59,15 @@
   .github-link svg {
     color: white;
     font-size: 18px;
+    padding-right: 5px;
   }
   
   .project-tech {
-    color: #00ff99;
-    font-weight: bold;
-    /* font-size: 11px; */
+    color: #a1a1a1;
   }
   
   .project-description {
-    font-size: 15px;
+    font-size: 1.2rem;
     /* line-height: 1.4; */
   }
   

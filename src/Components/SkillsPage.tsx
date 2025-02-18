@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SkillsPage.css";
 import { Fade } from "react-awesome-reveal";
 import HexagonContainer from "./HexagonContainer";
 import InfiniteSlider from "./InfiniteSlider";
 
 const SkillsPage: React.FC = () => {
+  const [isshowFront, setshowFront] = useState("front");
+
   return (
     <div className="skills-section">
       <div className="section-title">

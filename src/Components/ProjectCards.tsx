@@ -23,7 +23,7 @@ function ProjectCards() {
         <p className="project-description">
           A real-time coaching app for students learning to paint. This app is
           my baby, designed and built on my own.{" "}
-          <a href="#" className="learn-more">Learn more &gt;</a>
+          
         </p>
       </div>
     </div>
