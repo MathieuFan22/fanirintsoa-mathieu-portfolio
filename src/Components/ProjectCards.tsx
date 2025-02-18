@@ -4,29 +4,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function ProjectCards() {
   return (
     <div className="card-container">
-      <div className="card-image">
-        <img src="/Projects/test.jpg" alt="Profile" />
+      <div className="card-image-container">
+        <img src="/Projects/test.jpg" alt="Project Preview" />
       </div>
-      <div className="card-title">
-        <div className="project-title">
-          <h3>My Portfolio</h3>
-        </div>
-        <div className="github-link">
+      <div className="card-content">
+        <div className="card-header">
+          <h3 className="project-title">Paint.app</h3>
           <a
             href="https://github.com/MathieuFan22"
             target="_blank"
             rel="noopener noreferrer"
+            className="github-link"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
-      </div>
-      <div className="project-tech">
-        <p>React Ts - Nest</p>
-      </div>
-      <div className="project-description">
-        <p>
-        A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.
+        <p className="project-tech">Flutter - MUI - Python - FastAPI</p>
+        <p className="project-description">
+          A real-time coaching app for students learning to paint. This app is
+          my baby, designed and built on my own.{" "}
+          <a href="#" className="learn-more">Learn more &gt;</a>
         </p>
       </div>
     </div>

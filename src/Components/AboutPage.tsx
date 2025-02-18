@@ -42,7 +42,7 @@ const AboutPage: React.FC = () => {
         </div>
         <div className="right-side">
           <div className="image-wrapper">
-            <img className="image-circle" src="/me.png" alt="Profile" />
+            <img className="image" src="/me.png" alt="Profile" />
           </div>
           <div className="whatido-title">What I offer ?</div>
           <div className="whatido">
@@ -52,6 +52,7 @@ const AboutPage: React.FC = () => {
             <div className="whatido-item design">Social media Designs</div>
             <div className="whatido-item design">UI/UX Designs</div>
             <div className="whatido-item design">Logo Designs</div>
+            <div className="whatido-item design">Packaging Designs</div>
           </div>
         </div>
       </div>

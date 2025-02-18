@@ -5,7 +5,7 @@ import ProjectCards from "./ProjectCards";
 
 const ProjectsPage: React.FC = () => {
   return (
-    <div className="about-section">
+    <div className="project-section">
       <div className="section-title">
         <Fade direction="left">
           <div className="dot"></div>
