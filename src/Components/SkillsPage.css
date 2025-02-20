@@ -23,6 +23,9 @@
   align-items: center;
   transition: all .05s ease-in-out;
 }
+.hexagon-container.frontend-skills {
+  opacity: 1;
+}
 .hexagon-border {
     
   --b: 0.05rem; /* adjust to control the border  */
@@ -76,7 +79,18 @@
   /* transform: scale(1.05); */
   transition: all .05s ease-in-out;
 }
-
+.filter-skills {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+.filter-skills-items {
+  border: 0.5px solid yellow;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
 @media (max-width: 768px) {
  .test {
   width: 0;
