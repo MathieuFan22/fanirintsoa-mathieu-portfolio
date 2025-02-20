@@ -37,28 +37,28 @@ const project = [
   {
     imageSrcUrl: "BoardGames.jpg",
     projectTitle: "Board Games",
-    projectTech: "React TS, CSS",
+    projectTech: "React TS - CSS",
     projectDescription:
       "A digital board game platform that offers a variety of games, allowing players to compete against each other or challenge an AI in VS computer mode.",
   },
   {
     imageSrcUrl: "BoardGames.jpg",
     projectTitle: "Board Games",
-    projectTech: "React TS, CSS",
+    projectTech: "React TS - CSS",
     projectDescription:
       "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.",
   },
   {
     imageSrcUrl: "BoardGames.jpg",
     projectTitle: "Board Games",
-    projectTech: "React TS, CSS",
+    projectTech: "React TS - CSS",
     projectDescription:
       "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.",
   },
   {
     imageSrcUrl: "BoardGames.jpg",
     projectTitle: "Board Games",
-    projectTech: "React TS, CSS",
+    projectTech: "React TS - CSS",
     projectDescription:
       "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.",
   },
