@@ -42,7 +42,7 @@ html, body {
 .container {
   background-color: #131313;
   color: #ddd;
-  background-image: radial-gradient(rgb(94, 94, 94) 1px, transparent 0.5px);
+  background-image: radial-gradient(rgb(56, 56, 56) 1px, transparent 0.5px);
   background-size: 30px 30px;
   background-position: 0 0;
   position: sticky;

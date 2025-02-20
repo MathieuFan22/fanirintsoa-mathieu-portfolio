@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-interface TextAnimationProps {
+type TextAnimationProps = {
   text: string;
   delay?: number;
   randomCycleDuration?: number;
