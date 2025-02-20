@@ -59,6 +59,7 @@ html, body {
   }
 }
 
+
 @keyframes animateBlur2 {
   0%, 100% {
     transform: translate(0, 0) scale(1);
@@ -106,7 +107,49 @@ html, body {
   font-family: "Modernist-Regular";
   font-size: 0.8rem;
 }
+.social-links-vertical {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  /* Animation */
+  opacity: 0;
+  transform: translateY(200px);
+  animation: slideUp 1s ease-out forwards;
+}
 
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.social-links-vertical a {
+  color: rgb(182, 182, 182); /* Adjust color to match your theme */
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.slide-down {
+  animation: slideDown 1s ease-out forwards;
+}
+@keyframes slideDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
 @media (max-width: 768px) {
   .container::before {
     top: 100px;

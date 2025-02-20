@@ -54,21 +54,23 @@
     font-size: 1rem;
     font-weight: bold;
     margin: 0;
+    color: #d8d8d8;
   }
   
   .github-link svg {
-    color: white;
+    color: #d8d8d8;
     font-size: 18px;
     padding-right: 5px;
   }
   
   .project-tech {
-    color: #a1a1a1;
+    color: #b6b6b6;
   }
   
   .project-description {
-    font-size: 1.2rem;
-    /* line-height: 1.4; */
+    padding: 0 5px;
+    font-size: 1.1rem;
+    color: #d8d8d8;
   }
   
   .learn-more {

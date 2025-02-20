@@ -123,12 +123,15 @@
   }
   
   .nav-links {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    top: 60px;
+    top: 10px;
     right: 30px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(12px);
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(102px);
     -webkit-backdrop-filter: blur(12px);
     flex-direction: column;
     gap: 1rem;

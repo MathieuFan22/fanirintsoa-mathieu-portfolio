@@ -50,7 +50,7 @@ const HackerText: React.FC<TextAnimationProps> = ({
   }, [text, delay, randomCycleDuration]);
 
   const getRandomChar = () => {
-    const characters = '私の名前はジョンです';
+    const characters = 'ぃの名たはジョンです';
     return characters[Math.floor(Math.random() * characters.length)];
   };
 

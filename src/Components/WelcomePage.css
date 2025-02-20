@@ -73,10 +73,34 @@
 }
 
 .social-links {
+  transition: transform 0.3s ease-out;
+  position: relative;
   display: flex;
-  flex-direction: row;
   gap: 20px;
-  padding-top: 20px;
+}
+
+.social-links.sticky {
+  position: absolute;
+  bottom: -100%;
+  left: 20px;
+  flex-direction: column;
+  transform-origin: bottom left;
+}
+
+/* Animation for sticky state */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.social-links.sticky {
+  animation: slideIn 0.5s ease;
 }
 .social-links a {
   display: block;
@@ -125,7 +149,7 @@
  
   .left-side p,
   .right-side p {
-    font-size: 1.2rem;
+    font-size: 1.1rem !important;
     margin-bottom: 1.5rem;
     line-height: 1.6;
     width: 100%;
