@@ -39,6 +39,7 @@
     var(--b) 50%);
   background: #424242;
 }
+
 .section-content .hexagon{
   height: 90px; /* adjust to control the size  */
   margin-left: -104px;
@@ -74,34 +75,10 @@
 .hexagon-container:hover {
   /* transform: scale(1.05); */
   transition: all .05s ease-in-out;
-  /* filter: drop-shadow(0px 0px 15px rgba(59, 134, 134, 0.75)); */
-  filter: drop-shadow(0px 0px 20px rgb(216, 13, 13));
 }
 
 @media (max-width: 768px) {
-  .skills-section {
-    /* margin-top: 100%; */
-  }
-  /* .hexagon-row {
-    margin-top: -50px;
-    gap: 100px;
-  }
-  .section-content .hexagon{
-    margin-left: -120px;
-   
-    height: 90px; 
-   
-  }
-
-  
-  .third-line {
-    margin-top: -45px;
-  }
-  
-  .hexagon-border {
-    
-    --b: 0.1rem; 
-    aspect-ratio: 1/cos(30deg);
-   
-  } */
+ .test {
+  width: 0;
+ }
 }
