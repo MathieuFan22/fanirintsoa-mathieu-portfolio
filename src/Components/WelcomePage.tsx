@@ -1,4 +1,3 @@
-import React, { useState, useEffect, useRef } from "react";
 import "./WelcomePage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";

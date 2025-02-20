@@ -11,14 +11,10 @@ import ScrollProgressCircle from "./ScrollProgressCircle";
 import Lottie from "lottie-react";
 import animationData from "./AnimatedLogo.json";
 import useAssetsLoaded from "./useAssestsLoaded";
-import SocialLinks from "./Components/SocialLinks";
 
 const App: React.FC = () => {
   const assetsLoaded = useAssetsLoaded();
   const [opacity, setOpacity] = useState(0);
-  // For demo: simulate a state to control when we are on the WelcomePage or not.
-  const [showSocialLinks, setShowSocialLinks] = useState(false);
-  const [unShowSocialLinksClassName, setunShowSocialLinksClassName] = useState("");
   useLenis();
 
   useEffect(() => {
@@ -27,24 +23,6 @@ const App: React.FC = () => {
     }, 2000);
   }, []);
 
-  // Example: listen to scroll position to toggle social links
-  useEffect(() => {
-    const handleScroll = () => {
-      // For example: if scrolled more than 100px, show social links
-      if (window.scrollY > 220) {
-        setShowSocialLinks(true);
-        setunShowSocialLinksClassName('')
-      } else {
-        setunShowSocialLinksClassName('slide-down')
-        setTimeout(() => {
-          setShowSocialLinks(false);
-        }, 100);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <div className="container">
@@ -56,9 +34,7 @@ const App: React.FC = () => {
       ) : (
         <div style={{ opacity: opacity }}>
           <ScrollProgressCircle />
-          <Navbar />
-          {showSocialLinks && <span className={unShowSocialLinksClassName}><SocialLinks /></span>}
-          
+          <Navbar />          
           <section id="home" className="section dark">
             <WelcomePage />
           </section>

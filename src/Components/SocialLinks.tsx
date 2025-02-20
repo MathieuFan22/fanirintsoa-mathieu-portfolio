@@ -6,9 +6,6 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-import { Fade } from "react-awesome-reveal";
-
 function SocialLinks() {
   return (
       <div className="social-links-vertical">
