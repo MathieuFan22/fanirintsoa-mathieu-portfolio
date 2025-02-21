@@ -132,5 +132,6 @@
   }
   .honey-comb-container {
     flex-direction: column;
+    gap: 5rem;
   }
 }
