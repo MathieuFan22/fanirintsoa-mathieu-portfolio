@@ -12,9 +12,9 @@
 
 .slider {
   display: flex;
-  gap: 30px; /* Adjust spacing between items */
+  gap: 30px;
   animation: slide 15s linear infinite;
-  width: max-content; /* Ensure the content flows smoothly */
+  width: max-content;
 }
 .dot-spacing {
   width: 5px;

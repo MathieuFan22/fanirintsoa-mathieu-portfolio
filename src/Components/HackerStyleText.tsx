@@ -16,9 +16,7 @@ const HackerText: React.FC<TextAnimationProps> = ({
   useEffect(() => {
     const revealText = async () => {
       for (let i = 0; i < text.length; i++) {
-        // Cycle through random characters before revealing the actual character
         await cycleRandomCharacters(i, text[i]);
-        // Reveal the actual character
         setDisplayText((prev) => {
           const newText = [...prev];
           newText[i] = text[i];
@@ -38,7 +36,6 @@ const HackerText: React.FC<TextAnimationProps> = ({
         });
         await sleep(delay);
       }
-      // Set the final character after the random cycle
       setDisplayText((prev) => {
         const newText = [...prev];
         newText[index] = finalChar;

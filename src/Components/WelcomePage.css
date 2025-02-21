@@ -16,12 +16,12 @@
 .underline-name img {
   position: absolute;
   height: 25px;
-  bottom: -17px; /* Adjust as needed */
+  bottom: -17px;
   left: 50%;
   transform: translateX(-50%) rotate(185deg);
   mix-blend-mode: overlay;
-  width: 110%; /* Adjust width to match the text */
-  pointer-events: none; /* Prevent interactions */
+  width: 110%;
+  pointer-events: none;
 }
 .padding {
   padding-left: 10px;
@@ -87,7 +87,6 @@
   transform-origin: bottom left;
 }
 
-/* Animation for sticky state */
 @keyframes slideIn {
   from {
     transform: translateY(100%);

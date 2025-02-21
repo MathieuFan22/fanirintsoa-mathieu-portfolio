@@ -5,15 +5,15 @@ import { Fade } from "react-awesome-reveal";
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home"); // Default active is "home"
+  const [activeSection, setActiveSection] = useState("home"); 
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
 
-      // Detect which section is currently in view
+     
       const sections = document.querySelectorAll("section");
-      let currentSection = "home"; // Default section
+      let currentSection = "home";
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
         if (rect.top <= 100 && rect.bottom >= 100) {
@@ -43,7 +43,6 @@ const Navbar: React.FC = () => {
           </div>
         </a>
 
-        {/* Burger Menu Button */}
         <div
           className={`burger-menu ${isOpen ? "open" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
@@ -53,7 +52,6 @@ const Navbar: React.FC = () => {
           <div className="bar"></div>
         </div>
 
-        {/* Navigation Links */}
         <ul className={`nav-links ${isOpen ? "active" : "inactive"}`}>
           {["home", "about", "skills", "projects", "contact"].map((section) => (
             <li key={section}>

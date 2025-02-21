@@ -1,4 +1,3 @@
-// useAssetsLoaded.ts
 import { useEffect, useState } from 'react';
 
 const useAssetsLoaded = () => {
@@ -8,7 +7,7 @@ const useAssetsLoaded = () => {
     // Function to check if all images are loaded
     const checkImagesLoaded = () => {
       const images = Array.from(document.querySelectorAll('img'));
-      if (images.length === 0) return Promise.resolve(); // No images to load
+      if (images.length === 0) return Promise.resolve();
 
       return Promise.all(
         images.map(
@@ -17,7 +16,7 @@ const useAssetsLoaded = () => {
               if (img.complete) resolve();
               else {
                 img.addEventListener('load', () => resolve());
-                img.addEventListener('error', () => resolve()); // Handle errors
+                img.addEventListener('error', () => resolve());
               }
             }),
         ),

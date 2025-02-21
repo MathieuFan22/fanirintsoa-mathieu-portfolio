@@ -6,12 +6,8 @@ const AboutPage: React.FC = () => {
     <div className="about-section">
       <div className="section-title">
         <Fade direction="right">
-          {/* <div className="underline-name"> */}
           <div className="dot"></div>
           <h1>About</h1>
-
-          {/* <img src="/hand drawn circle.png" alt="Underline" /> */}
-          {/* </div> */}
         </Fade>
         <div className="line"></div>
       </div>

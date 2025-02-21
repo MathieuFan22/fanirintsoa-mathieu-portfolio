@@ -45,8 +45,8 @@
   opacity: 0.35;
 }
 .hexagon-border {
-  --b: 0.05rem; /* adjust to control the border  */
-  height: 90px; /* adjust to control the size  */
+  --b: 0.05rem;
+  height: 90px;
   aspect-ratio: 1 / cos(30deg);
   clip-path: polygon(
     0 50%,
