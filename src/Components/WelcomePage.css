@@ -127,7 +127,7 @@
   border-radius: 8px;
   font-family: "Modernist-Regular";
   border: 2px solid rgb(156, 56, 56);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: all 0.3s ease;
 }
 
@@ -138,7 +138,7 @@
 
 @media (max-width: 768px) {
   .welcome-section {
-    padding-top: 120px;
+    padding-top: 45%;
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 8%;

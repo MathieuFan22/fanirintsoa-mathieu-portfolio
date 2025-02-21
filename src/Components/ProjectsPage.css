@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: start;
   transition: border 0.3s ease-in-out;
-  border: none;
+  border-bottom: 0.5px solid rgba(131, 131, 131, 0);
 }
 .card-container.hover {
   border-bottom: 0.5px solid rgb(131, 131, 131);
@@ -31,15 +31,20 @@
 }
 
 .card-image-container {
-  background-color: #1e1e1e;
+  background-color: #8686862f;
+  backdrop-filter: blur(20px);
   margin-bottom: 10px;
   padding: 10% 5% 0 5%;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
-
+.card-image-container:hover {
+  background-color: #303030;
+  transition: all 0.3s ease-in-out;
+}
 .card-image-container img {
   width: 100%;
   border-radius: 8px 8px 0 0;

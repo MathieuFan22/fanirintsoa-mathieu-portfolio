@@ -63,5 +63,5 @@ body {
 /* Firefox scrollbar customization */
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgb(255, 255, 255) rgb(0, 0, 0); /* Thumb (red) | Track (blue) */
+  scrollbar-color: rgb(161, 161, 161) rgb(0, 0, 0);
 }

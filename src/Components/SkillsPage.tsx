@@ -14,7 +14,7 @@ const SkillsPage: React.FC = () => {
     { url: "/Skills/html.png", category: "Frontend" },
     { url: "/Skills/css.png", category: "Frontend" },
     { url: "/Skills/xd.png", category: "Design" },
-    { url: "/Skills/css.png", category: "Frontend" },
+    { url: "/Skills/flutter.png", category: "Frontend" },
     { url: "/Skills/linux.png", category: "Tools" },
     { url: "/Skills/js.png", category: "Frontend" },
     { url: "/Skills/react.png", category: "Frontend" },
@@ -61,32 +61,53 @@ const SkillsPage: React.FC = () => {
             </div>
           ))}
         </div>
-
+          <div className="honey-comb-container">
+            
+          </div>
         <div className="second-line hexagon-row">
           <HexagonContainer url={skills[0].url} classNameFilter={getFilterClass(skills[0].category)} />
+        </div>
+
+        <div className="second-line hexagon-row">
           <HexagonContainer url={skills[1].url} classNameFilter={getFilterClass(skills[1].category)} />
-        </div>
-
-        <div className="second-line hexagon-row">
           <HexagonContainer url={skills[2].url} classNameFilter={getFilterClass(skills[2].category)} />
-          <HexagonContainer url={skills[3].url} classNameFilter={getFilterClass(skills[3].category)} />
-          <HexagonContainer url={skills[4].url} classNameFilter={getFilterClass(skills[4].category)} />
         </div>
 
         <div className="second-line hexagon-row">
+          <HexagonContainer url={skills[3].url} classNameFilter={getFilterClass(skills[3].category)} />
+        </div>
+
+        <div className="second-line hexagon-row">
+          <HexagonContainer url={skills[4].url} classNameFilter={getFilterClass(skills[4].category)} />
           <HexagonContainer url={skills[5].url} classNameFilter={getFilterClass(skills[5].category)} />
+        </div>
+
+        <div className="second-line hexagon-row">
           <HexagonContainer url={skills[6].url} classNameFilter={getFilterClass(skills[6].category)} />
         </div>
 
+        <div className="margin"></div>
+
         <div className="second-line hexagon-row">
           <HexagonContainer url={skills[7].url} classNameFilter={getFilterClass(skills[7].category)} />
+        </div>
+
+        <div className="second-line hexagon-row">
           <HexagonContainer url={skills[8].url} classNameFilter={getFilterClass(skills[8].category)} />
           <HexagonContainer url={skills[9].url} classNameFilter={getFilterClass(skills[9].category)} />
         </div>
 
         <div className="second-line hexagon-row">
           <HexagonContainer url={skills[10].url} classNameFilter={getFilterClass(skills[10].category)} />
+        </div>
+
+        <div className="second-line hexagon-row">
           <HexagonContainer url={skills[11].url} classNameFilter={getFilterClass(skills[11].category)} />
+          <HexagonContainer url={skills[11].url} classNameFilter={getFilterClass(skills[11].category)} />
+        </div>
+
+        <div className="second-line hexagon-row">
+          <HexagonContainer url={skills[9].url} classNameFilter={getFilterClass(skills[9].category)} />
         </div>
 
         <div className="margin"></div>
