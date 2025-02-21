@@ -6,36 +6,38 @@ import { useState } from "react";
 
 const SkillsPage: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>("");
+  const [isFiltered, setisFiltered] = useState<boolean>(false);
 
   const categories = ["Frontend", "Backend", "Tools", "Design"];
 
   const skills = [
     { url: "/Skills/html.png", category: "Frontend" },
-    { url: "/Skills/html.png", category: "Frontend" },
     { url: "/Skills/css.png", category: "Frontend" },
-    { url: "/Skills/react.png", category: "Frontend" },
+    { url: "/Skills/xd.png", category: "Design" },
     { url: "/Skills/css.png", category: "Frontend" },
+    { url: "/Skills/linux.png", category: "Tools" },
     { url: "/Skills/js.png", category: "Frontend" },
     { url: "/Skills/react.png", category: "Frontend" },
-    { url: "/Skills/react.png", category: "Frontend" },
-    { url: "/Skills/flutter.png", category: "Frontend" },
     { url: "/Skills/ts.png", category: "Backend" },
     { url: "/Skills/nest.png", category: "Backend" },
+    { url: "/Skills/react.png", category: "Frontend" },
     { url: "/Skills/mongo.png", category: "Backend" },
-    { url: "/Skills/ai.png", category: "Design" },
     { url: "/Skills/ps.png", category: "Design" },
+    { url: "/Skills/flutter.png", category: "Frontend" },
     { url: "/Skills/figma.png", category: "Design" },
     { url: "/Skills/git.png", category: "Tools" },
     { url: "/Skills/docker.png", category: "Tools" },
-    { url: "/Skills/linux.png", category: "Tools" },
+    { url: "/Skills/ai.png", category: "Design" },
+    { url: "/Skills/html.png", category: "Frontend" },
     { url: "/Skills/github.png", category: "Tools" }
   ];
 
   const getFilterClass = (skillCategory: string) =>
-    activeCategory === skillCategory ? `${skillCategory.toLowerCase()}-skills` : "down-opacity";
+    activeCategory === skillCategory ? `${skillCategory.toLowerCase()}-skills` : isFiltered? "down-opacity" : "";
 
   const handleCategoryClick = (category: string) => {
     setActiveCategory(category);
+    setisFiltered(true)
   };
 
   return (
@@ -60,7 +62,6 @@ const SkillsPage: React.FC = () => {
           ))}
         </div>
 
-        {/* We keep the layout as rows of hexagons as in your original code */}
         <div className="second-line hexagon-row">
           <HexagonContainer url={skills[0].url} classNameFilter={getFilterClass(skills[0].category)} />
           <HexagonContainer url={skills[1].url} classNameFilter={getFilterClass(skills[1].category)} />
