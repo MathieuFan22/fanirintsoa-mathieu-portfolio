@@ -21,41 +21,63 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .05s ease-in-out;
+  transition: all 0.05s ease-in-out;
 }
-.hexagon-container.frontend-skills {
+.hexagon-container.frontend-skills,
+.hexagon-container.backend-skills,
+.hexagon-container.tools-skills,
+.hexagon-container.design-skills {
   opacity: 1;
 }
+.skill-logo.frontend-skills,
+.skill-logo.backend-skills,
+.skill-logo.tools-skills,
+.skill-logo.design-skills {
+  opacity: 0.8 !important;
+  scale: 1.2;
+  transition: all 0.5s ease-in-out;
+}
+.hexagon.frontend-skills, .hexagon.backend-skills, .hexagon.tools-skills, .hexagon.design-skills {
+  background: #42424250;
+}
+
+.hexagon-container.down-opacity {
+  opacity: 0.35;
+}
 .hexagon-border {
-    
   --b: 0.05rem; /* adjust to control the border  */
   height: 90px; /* adjust to control the size  */
-  aspect-ratio: 1/cos(30deg);
-  clip-path: 
-    polygon(0 50%,50% -50%,100% 50%,50% 150%,0 50%,
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(
+    0 50%,
+    50% -50%,
+    100% 50%,
+    50% 150%,
+    0 50%,
     var(--b) 50%,
-    calc(25% + var(--b)*cos(60deg)) calc(100% - var(--b)*sin(60deg)),
-    calc(75% - var(--b)*cos(60deg)) calc(100% - var(--b)*sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
     calc(100% - var(--b)) 50%,
-    calc(75% - var(--b)*cos(60deg)) calc(var(--b)*sin(60deg)),
-    calc(25% + var(--b)*cos(60deg)) calc(var(--b)*sin(60deg)),
-    var(--b) 50%);
+    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    var(--b) 50%
+  );
   background: #424242;
 }
 
-.section-content .hexagon{
+.section-content .hexagon {
   height: 90px; /* adjust to control the size  */
   margin-left: -104px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  aspect-ratio: 1/cos(30deg);
-  clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
 }
 .section-content .skill-logo {
   width: 40px;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   opacity: 0.5;
 }
 .hexagon-row {
@@ -74,10 +96,9 @@
   margin-top: -43px;
 }
 
-
 .hexagon-container:hover {
   /* transform: scale(1.05); */
-  transition: all .05s ease-in-out;
+  transition: all 0.05s ease-in-out;
 }
 .filter-skills {
   display: flex;
@@ -92,7 +113,7 @@
   cursor: pointer;
 }
 @media (max-width: 768px) {
- .test {
-  width: 0;
- }
+  .test {
+    width: 0;
+  }
 }

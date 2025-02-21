@@ -5,18 +5,39 @@ import InfiniteSlider from "./InfiniteSlider";
 import { useState } from "react";
 
 const SkillsPage: React.FC = () => {
-  const [isFrontend, setisFrontend] = useState(false);
-  const [isBackend, setisBackend] = useState(false);
-  const [isTools, setisTools] = useState(false);
-  const [isDesign, setisDesign] = useState(false);
-  const [isFiltred, setisFiltred] = useState(false);
-  const showFrontend = () => {
-    setisFrontend(true);
-    setisBackend(false);
-    setisTools(false);
-    setisDesign(false);
-    setisFiltred(true);
-  }
+  const [activeCategory, setActiveCategory] = useState<string>("");
+
+  const categories = ["Frontend", "Backend", "Tools", "Design"];
+
+  const skills = [
+    { url: "/Skills/html.png", category: "Frontend" },
+    { url: "/Skills/html.png", category: "Frontend" },
+    { url: "/Skills/css.png", category: "Frontend" },
+    { url: "/Skills/react.png", category: "Frontend" },
+    { url: "/Skills/css.png", category: "Frontend" },
+    { url: "/Skills/js.png", category: "Frontend" },
+    { url: "/Skills/react.png", category: "Frontend" },
+    { url: "/Skills/react.png", category: "Frontend" },
+    { url: "/Skills/flutter.png", category: "Frontend" },
+    { url: "/Skills/ts.png", category: "Backend" },
+    { url: "/Skills/nest.png", category: "Backend" },
+    { url: "/Skills/mongo.png", category: "Backend" },
+    { url: "/Skills/ai.png", category: "Design" },
+    { url: "/Skills/ps.png", category: "Design" },
+    { url: "/Skills/figma.png", category: "Design" },
+    { url: "/Skills/git.png", category: "Tools" },
+    { url: "/Skills/docker.png", category: "Tools" },
+    { url: "/Skills/linux.png", category: "Tools" },
+    { url: "/Skills/github.png", category: "Tools" }
+  ];
+
+  const getFilterClass = (skillCategory: string) =>
+    activeCategory === skillCategory ? `${skillCategory.toLowerCase()}-skills` : "down-opacity";
+
+  const handleCategoryClick = (category: string) => {
+    setActiveCategory(category);
+  };
+
   return (
     <div className="skills-section">
       <div className="section-title">
@@ -28,58 +49,67 @@ const SkillsPage: React.FC = () => {
       </div>
       <div className="section-content">
         <div className="filter-skills">
-        <div className="filter-skills-items " onClick={showFrontend}>Frontend</div>
-        <div className="filter-skills-items backend-skills">Backend</div>
-        <div className="filter-skills-items tools-skills">Tools</div>
-        <div className="filter-skills-items design-skills">Design</div>
+          {categories.map((category) => (
+            <div
+              key={category}
+              className={`filter-skills-items ${activeCategory === category ? "active" : ""}`}
+              onClick={() => handleCategoryClick(category)}
+            >
+              {category}
+            </div>
+          ))}
         </div>
+
+        {/* We keep the layout as rows of hexagons as in your original code */}
         <div className="second-line hexagon-row">
-          <HexagonContainer url={"/Skills/html.png"} classNameFilter={isFrontend? "frontend-skills" : ""} />
-          <HexagonContainer url={"/Skills/html.png"} classNameFilter={isFrontend? "frontend-skills" : ""} />
+          <HexagonContainer url={skills[0].url} classNameFilter={getFilterClass(skills[0].category)} />
+          <HexagonContainer url={skills[1].url} classNameFilter={getFilterClass(skills[1].category)} />
         </div>
 
         <div className="second-line hexagon-row">
-          <HexagonContainer url={"/Skills/css.png"} classNameFilter={isFrontend? "frontend-skills" : ""} />
-          <HexagonContainer url={"/Skills/ai.png"} classNameFilter={isDesign? "design-skills" : ""} />
-          <HexagonContainer url={"/Skills/ps.png"} classNameFilter={isDesign? "design-skills" : ""} />
+          <HexagonContainer url={skills[2].url} classNameFilter={getFilterClass(skills[2].category)} />
+          <HexagonContainer url={skills[3].url} classNameFilter={getFilterClass(skills[3].category)} />
+          <HexagonContainer url={skills[4].url} classNameFilter={getFilterClass(skills[4].category)} />
         </div>
 
         <div className="second-line hexagon-row">
-          <HexagonContainer url={"/Skills/react.png"} classNameFilter={isFrontend? "frontend-skills" : ""} />
-          <HexagonContainer url={"/Skills/figma.png"} classNameFilter={isDesign? "design-skills" : ""} />
-        </div>
-        <div className="second-line hexagon-row">
-          <HexagonContainer url={"/Skills/css.png"} classNameFilter={isFrontend? "frontend-skills" : ""} />
-          <HexagonContainer url={"/Skills/js.png"} classNameFilter={isFrontend? "frontend-skills" : ""} />
-          <HexagonContainer url={"/Skills/ts.png"} classNameFilter={isFrontend? "frontend-skills backend-skills" : ""} />
+          <HexagonContainer url={skills[5].url} classNameFilter={getFilterClass(skills[5].category)} />
+          <HexagonContainer url={skills[6].url} classNameFilter={getFilterClass(skills[6].category)} />
         </div>
 
         <div className="second-line hexagon-row">
-          <HexagonContainer url={"/Skills/git.png"} classNameFilter={isTools? "tools-skills" : ""} />
-          <HexagonContainer url={"/Skills/react.png"} classNameFilter={isFrontend? "frontend-skills" : ""} />
+          <HexagonContainer url={skills[7].url} classNameFilter={getFilterClass(skills[7].category)} />
+          <HexagonContainer url={skills[8].url} classNameFilter={getFilterClass(skills[8].category)} />
+          <HexagonContainer url={skills[9].url} classNameFilter={getFilterClass(skills[9].category)} />
         </div>
+
+        <div className="second-line hexagon-row">
+          <HexagonContainer url={skills[10].url} classNameFilter={getFilterClass(skills[10].category)} />
+          <HexagonContainer url={skills[11].url} classNameFilter={getFilterClass(skills[11].category)} />
+        </div>
+
         <div className="margin"></div>
 
         <div className="first-line">
-          <HexagonContainer url={"/Skills/docker.png"} classNameFilter={isTools? "tools-skills" : ""} />
+          <HexagonContainer url={skills[12].url} classNameFilter={getFilterClass(skills[12].category)} />
         </div>
 
         <div className="second-line hexagon-row">
-          <HexagonContainer url={"/Skills/linux.png"} classNameFilter={isTools? "tools-skills" : ""} />
-          <HexagonContainer url={"/Skills/github.png"} classNameFilter={isTools? "tools-skills" : ""} />
+          <HexagonContainer url={skills[13].url} classNameFilter={getFilterClass(skills[13].category)} />
+          <HexagonContainer url={skills[14].url} classNameFilter={getFilterClass(skills[14].category)} />
         </div>
 
         <div className="second-line hexagon-row">
-          <HexagonContainer url={"/Skills/react.png"} classNameFilter={isFrontend? "frontend-skills" : ""} />
-        </div>
-        <div className="second-line hexagon-row">
-          <HexagonContainer url={"/Skills/flutter.png"} classNameFilter={isFrontend? "frontend-skills" : ""} />
-
-          <HexagonContainer url={"/Skills/nest.png"} classNameFilter={isBackend? "backend-skills" : ""} />
+          <HexagonContainer url={skills[15].url} classNameFilter={getFilterClass(skills[15].category)} />
         </div>
 
         <div className="second-line hexagon-row">
-          <HexagonContainer url={"/Skills/mongo.png"} classNameFilter={isBackend? "backend-skills" : ""} />
+          <HexagonContainer url={skills[16].url} classNameFilter={getFilterClass(skills[16].category)} />
+          <HexagonContainer url={skills[17].url} classNameFilter={getFilterClass(skills[17].category)} />
+        </div>
+
+        <div className="second-line hexagon-row">
+          <HexagonContainer url={skills[18].url} classNameFilter={getFilterClass(skills[18].category)} />
         </div>
       </div>
       <InfiniteSlider />

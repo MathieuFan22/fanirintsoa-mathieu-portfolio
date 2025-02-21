@@ -10,8 +10,8 @@ const HexagonContainer: React.FC<HexagonClassnameProps> = ({
   return (
     <div className={`hexagon-container ${classNameFilter}`}>
       <div className="hexagon-border"></div>
-      <div className="hexagon">
-        <img src={url} className="skill-logo" />
+      <div className={`hexagon ${classNameFilter}`}>
+        <img src={url} className={`skill-logo ${classNameFilter}`} />
       </div>
     </div>
   );
