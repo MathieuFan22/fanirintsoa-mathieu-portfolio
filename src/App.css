@@ -151,7 +151,7 @@ html, body {
 }
 @media (max-width: 768px) {
   .container::before {
-    top: 100px;
+    top: 30% !important;
     right: 40%;
     width: 60px;
   height: 60px;
@@ -159,8 +159,8 @@ html, body {
   background-color: rgb(255, 208, 0);
   }
   .container::after {
-    top: 30%;
-    right: 30%;
+    top: 7%;
+    right: 20%;
     width: 100px;
   height: 100px;
   }
