@@ -20,6 +20,7 @@ const SkillsPage: React.FC = () => {
     { url: "/Skills/react.png", category: "Frontend" },
     { url: "/Skills/ts.png", category: "Backend" },
     { url: "/Skills/nest.png", category: "Backend" },
+    { url: "/Skills/github.png", category: "Tools" },
     { url: "/Skills/react.png", category: "Frontend" },
     { url: "/Skills/mongo.png", category: "Backend" },
     { url: "/Skills/ps.png", category: "Design" },
@@ -29,7 +30,6 @@ const SkillsPage: React.FC = () => {
     { url: "/Skills/docker.png", category: "Tools" },
     { url: "/Skills/ai.png", category: "Design" },
     { url: "/Skills/html.png", category: "Frontend" },
-    { url: "/Skills/github.png", category: "Tools" }
   ];
 
   const getFilterClass = (skillCategory: string) =>
@@ -62,9 +62,8 @@ const SkillsPage: React.FC = () => {
           ))}
         </div>
           <div className="honey-comb-container">
-            
-          </div>
-        <div className="second-line hexagon-row">
+              <div className="first-hc">
+              <div className="second-line hexagon-row">
           <HexagonContainer url={skills[0].url} classNameFilter={getFilterClass(skills[0].category)} />
         </div>
 
@@ -85,34 +84,33 @@ const SkillsPage: React.FC = () => {
         <div className="second-line hexagon-row">
           <HexagonContainer url={skills[6].url} classNameFilter={getFilterClass(skills[6].category)} />
         </div>
+              </div>
+              <div className="second-hc">
 
-        <div className="margin"></div>
+<div className="second-line hexagon-row">
+  <HexagonContainer url={skills[7].url} classNameFilter={getFilterClass(skills[7].category)} />
+</div>
 
-        <div className="second-line hexagon-row">
-          <HexagonContainer url={skills[7].url} classNameFilter={getFilterClass(skills[7].category)} />
-        </div>
+<div className="second-line hexagon-row">
+  <HexagonContainer url={skills[8].url} classNameFilter={getFilterClass(skills[8].category)} />
+  <HexagonContainer url={skills[9].url} classNameFilter={getFilterClass(skills[9].category)} />
+</div>
 
-        <div className="second-line hexagon-row">
-          <HexagonContainer url={skills[8].url} classNameFilter={getFilterClass(skills[8].category)} />
-          <HexagonContainer url={skills[9].url} classNameFilter={getFilterClass(skills[9].category)} />
-        </div>
+<div className="second-line hexagon-row">
+  <HexagonContainer url={skills[10].url} classNameFilter={getFilterClass(skills[10].category)} />
+</div>
 
-        <div className="second-line hexagon-row">
-          <HexagonContainer url={skills[10].url} classNameFilter={getFilterClass(skills[10].category)} />
-        </div>
+<div className="second-line hexagon-row">
+  <HexagonContainer url={skills[11].url} classNameFilter={getFilterClass(skills[11].category)} />
+  <HexagonContainer url={skills[11].url} classNameFilter={getFilterClass(skills[11].category)} />
+</div>
 
-        <div className="second-line hexagon-row">
-          <HexagonContainer url={skills[11].url} classNameFilter={getFilterClass(skills[11].category)} />
-          <HexagonContainer url={skills[11].url} classNameFilter={getFilterClass(skills[11].category)} />
-        </div>
-
-        <div className="second-line hexagon-row">
-          <HexagonContainer url={skills[9].url} classNameFilter={getFilterClass(skills[9].category)} />
-        </div>
-
-        <div className="margin"></div>
-
-        <div className="first-line">
+<div className="second-line hexagon-row">
+  <HexagonContainer url={skills[9].url} classNameFilter={getFilterClass(skills[9].category)} />
+</div>
+              </div>
+              <div className="third-hc">
+              <div className="second-line hexagon-row">
           <HexagonContainer url={skills[12].url} classNameFilter={getFilterClass(skills[12].category)} />
         </div>
 
@@ -133,6 +131,15 @@ const SkillsPage: React.FC = () => {
         <div className="second-line hexagon-row">
           <HexagonContainer url={skills[18].url} classNameFilter={getFilterClass(skills[18].category)} />
         </div>
+              </div>
+          </div>
+
+
+
+
+      
+
+        
       </div>
       <InfiniteSlider />
     </div>

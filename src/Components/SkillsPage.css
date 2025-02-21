@@ -15,7 +15,19 @@
   justify-content: center;
   align-items: center;
 }
-
+.honey-comb-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.first-hc, .second-hc, .third-hc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .hexagon-container {
   cursor: pointer;
   display: flex;
@@ -117,5 +129,8 @@
 @media (max-width: 768px) {
   .test {
     width: 0;
+  }
+  .honey-comb-container {
+    flex-direction: column;
   }
 }
