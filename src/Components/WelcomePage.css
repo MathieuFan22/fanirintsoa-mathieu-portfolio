@@ -43,7 +43,9 @@
   color: #ddd;
   margin-bottom: 35px;
 }
-
+.welcome-section .left-side {
+  /* position: relative; */
+}
 .left-side h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -135,6 +137,13 @@
   background: rgba(255, 255, 255, 0.2);
   border: 2px solid white;
 }
+/* .h1-container,
+.h2-container {
+  position: absolute;
+  transform: translateX(0);
+  will-change: transform;
+} */
+
 
 @media (max-width: 768px) {
   .welcome-section {

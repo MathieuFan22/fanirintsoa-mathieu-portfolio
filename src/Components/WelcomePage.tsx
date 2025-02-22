@@ -10,26 +10,31 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Fade } from "react-awesome-reveal";
 import HackerText from "./HackerStyleText";
+import useScrollAnimation from "./GsapScrollAnimation";
 
 const WelcomePage: React.FC = () => {
-
+  useScrollAnimation();
   return (
     <section className="welcome-section">
       <div className="left-side">
+      <div className="h1-container">
         <h1>
           HELLOO <span className="world">WOORLD</span>
         </h1>
+        </div>
+        <div className="h2-container">
         <h2>
           <span className="firstname">I'm</span>{" "}
           <div className="underline-name">
             <span>
               <HackerText text="Mathieu" delay={50} randomCycleDuration={400} />
             </span>
-            <Fade direction="left" triggerOnce>
+            <Fade direction="left" triggerOnce delay={2000}>
               <img src="/hand drawn underline.png" alt="Underline" />
             </Fade>
           </div>
         </h2>
+        </div>
         <Fade direction="left">
           <div className="function">Developer / Designer</div>
           <p>
