@@ -23,7 +23,7 @@ const WelcomePage: React.FC = () => {
           <span className="firstname">I'm</span>{" "}
           <div className="underline-name">
             <span>
-              <HackerText text="Mathieu" delay={100} randomCycleDuration={200} />
+              <HackerText text="Mathieu" delay={50} randomCycleDuration={400} />
             </span>
             <Fade direction="left" triggerOnce>
               <img src="/hand drawn underline.png" alt="Underline" />

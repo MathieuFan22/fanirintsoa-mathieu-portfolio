@@ -33,6 +33,7 @@ body {
   scroll-behavior: smooth;
   overscroll-behavior: contain;
   scroll-snap-type: y mandatory;
+  cursor: url('/assets/cursor.png'), auto !important;
   /* cursor: none; */
 }
 ::selection {

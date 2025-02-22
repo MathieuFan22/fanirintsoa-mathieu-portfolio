@@ -88,6 +88,7 @@
   color: white;
   aspect-ratio: 1 / cos(30deg);
   clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+  backdrop-filter: blur(5px);
 }
 .section-content .skill-logo {
   width: 40px;
@@ -98,6 +99,7 @@
   margin-top: -40px;
   display: flex;
   gap: 70px;
+  
 }
 .margin {
   padding: 30px;
@@ -127,6 +129,10 @@
   padding: 0.5rem 1rem;
   border-radius: 7px;
   cursor: pointer;
+  user-select: none;
+}
+.filter-skills-items.active {
+  background-color: rgba(207, 207, 0, 0.219);
 }
 @media (max-width: 768px) {
   .test {

@@ -4,7 +4,7 @@
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  background-color: #ffffff17;
+  background-color: #e7e7e71a;
   padding: 0.5rem;
   backdrop-filter: blur(10px);
   mask-image: linear-gradient(
@@ -14,6 +14,7 @@
     #000 60%,
     transparent
   );
+  backdrop-filter: blur(5px);
 }
 .slider {
   display: flex;
