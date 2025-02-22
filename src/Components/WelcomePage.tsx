@@ -10,20 +10,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Fade } from "react-awesome-reveal";
 import HackerText from "./HackerStyleText";
-import useScrollAnimation from "./GsapScrollAnimation";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const WelcomePage: React.FC = () => {
-  useScrollAnimation();
-  return (
+  const { scrollYProgress } = useScroll();
+  const h2X = useTransform(scrollYProgress, [0, 5], [0, 10500]);
+  const h1X = useTransform(scrollYProgress, [0, 5], [0, -10500]);  
+    return (
     <section className="welcome-section">
-      <div className="left-side">
-      <div className="h1-container">
-        <h1>
+      <div className="left-side" >
+        <motion.h1 style={{ x: h1X }}>
           HELLOO <span className="world">WOORLD</span>
-        </h1>
-        </div>
-        <div className="h2-container">
-        <h2>
+        </motion.h1>
+
+        <motion.h2 style={{ x: h2X }}>
           <span className="firstname">I'm</span>{" "}
           <div className="underline-name">
             <span>
@@ -33,13 +33,12 @@ const WelcomePage: React.FC = () => {
               <img src="/hand drawn underline.png" alt="Underline" />
             </Fade>
           </div>
-        </h2>
-        </div>
+        </motion.h2>
         <Fade direction="left">
           <div className="function">Developer / Designer</div>
           <p>
-            Passionate and fascinated by the IT world, creative, and resourceful.
-            I turn ideas into unique digital experiences
+            Passionate and fascinated by the IT world, creative, and
+            resourceful. I turn ideas into unique digital experiences
           </p>
           <div className="social-links">
             <a

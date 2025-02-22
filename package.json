@@ -18,7 +18,7 @@
     "@studio-freight/lenis": "^1.0.42",
     "@tsparticles/all": "^3.8.0",
     "@tsparticles/react": "^3.0.0",
-    "framer-motion": "^12.0.6",
+    "framer-motion": "^12.4.7",
     "gsap": "^3.12.7",
     "hugeicons-react": "^0.3.0",
     "lottie-react": "^2.4.1",
