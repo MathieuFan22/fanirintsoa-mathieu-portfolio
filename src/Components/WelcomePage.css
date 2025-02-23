@@ -156,8 +156,8 @@
     
   }
  
-  .left-side p,
-  .right-side p {
+  .welcome-section .left-side p, .about-section .left-side p,
+  .welcome-section .right-side p, .about-section .left-side p {
     font-size: 1.1rem !important;
     margin-bottom: 1.5rem;
     line-height: 1.6;

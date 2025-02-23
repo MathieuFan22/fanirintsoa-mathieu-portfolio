@@ -129,7 +129,7 @@
   }
   .about-section .left-side,.project-section .left-side,
   .about-section .right-side {
-    width: 95%;
+    width: 85%;
     /* background-color: red; */
     display: flex;
     justify-content: center;
@@ -137,12 +137,12 @@
   }
   .intro {
     padding-left: 0%;
+    padding-right: 3% !important;
     font-size: 1.1rem !important;
   }
 
   .image {
     width: 300px;
-    margin-left: -5%;
   }
 }
 

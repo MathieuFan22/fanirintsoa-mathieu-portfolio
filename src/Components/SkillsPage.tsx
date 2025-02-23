@@ -3,16 +3,16 @@ import { Fade } from "react-awesome-reveal";
 import HexagonContainer from "./HexagonContainer";
 import InfiniteSlider from "./InfiniteSlider";
 import { useRef, useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+// import { motion, useScroll, useTransform } from "framer-motion";
 
 const SkillsPage: React.FC = () => {
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref, // Track this section
-    offset: ["start start", "end start"], // Adjust when animation starts
-  });
-  const hexaX = useTransform(scrollYProgress, [0, 0.8], [-500, 0]);
-  const hexa2X = useTransform(scrollYProgress, [0, 0.8], [0, 500]);
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   offset: ["start start", "end start"],
+  // });
+  // const hexaX = useTransform(scrollYProgress, [0, 0.8], [-500, 0]);
+  // const hexa2X = useTransform(scrollYProgress, [0, 0.8], [0, 500]);
 
   const [activeCategory, setActiveCategory] = useState<string>("");
   const [isFiltered, setisFiltered] = useState<boolean>(false);
