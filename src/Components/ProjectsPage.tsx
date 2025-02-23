@@ -16,6 +16,7 @@ const ProjectsPage: React.FC = () => {
       </div>
       <div className="section-content-project">
         <div className="left-side">
+        <Fade direction="left" fraction={0} triggerOnce={false} >
           {
             project.map((project) => (
               <ProjectCards
@@ -26,7 +27,7 @@ const ProjectsPage: React.FC = () => {
               />
             ))
           }
-          
+          </Fade>
           
         </div>
       </div>

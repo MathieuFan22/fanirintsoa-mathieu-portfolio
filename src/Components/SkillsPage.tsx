@@ -2,9 +2,18 @@ import "./SkillsPage.css";
 import { Fade } from "react-awesome-reveal";
 import HexagonContainer from "./HexagonContainer";
 import InfiniteSlider from "./InfiniteSlider";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const SkillsPage: React.FC = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref, // Track this section
+    offset: ["start start", "end start"], // Adjust when animation starts
+  });
+  const hexaX = useTransform(scrollYProgress, [0, 0.8], [-500, 0]);
+  const hexa2X = useTransform(scrollYProgress, [0, 0.8], [0, 500]);
+
   const [activeCategory, setActiveCategory] = useState<string>("");
   const [isFiltered, setisFiltered] = useState<boolean>(false);
 
@@ -45,7 +54,7 @@ const SkillsPage: React.FC = () => {
   };
 
   return (
-    <div className="skills-section">
+    <div className="skills-section" ref={ref}>
       <div className="section-title">
         <Fade direction="left">
           <div className="dot"></div>
@@ -76,15 +85,19 @@ const SkillsPage: React.FC = () => {
               />
             </div>
 
-            <div className="second-line hexagon-row">
-              <HexagonContainer
-                url={skills[1].url}
-                classNameFilter={getFilterClass(skills[1].category)}
-              />
-              <HexagonContainer
-                url={skills[2].url}
-                classNameFilter={getFilterClass(skills[2].category)}
-              />
+            <div className="second-line hexagon-row" >
+              
+                <HexagonContainer
+                  url={skills[1].url}
+                  classNameFilter={getFilterClass(skills[1].category)}
+                />
+             
+             
+                <HexagonContainer
+                  url={skills[2].url}
+                  classNameFilter={getFilterClass(skills[2].category)}
+                />
+             
             </div>
 
             <div className="second-line hexagon-row">
@@ -95,14 +108,18 @@ const SkillsPage: React.FC = () => {
             </div>
 
             <div className="second-line hexagon-row">
-              <HexagonContainer
-                url={skills[4].url}
-                classNameFilter={getFilterClass(skills[4].category)}
-              />
-              <HexagonContainer
-                url={skills[5].url}
-                classNameFilter={getFilterClass(skills[5].category)}
-              />
+           
+                <HexagonContainer
+                  url={skills[4].url}
+                  classNameFilter={getFilterClass(skills[4].category)}
+                />
+            
+             
+                <HexagonContainer
+                  url={skills[5].url}
+                  classNameFilter={getFilterClass(skills[5].category)}
+                />
+             
             </div>
 
             <div className="second-line hexagon-row">

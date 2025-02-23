@@ -134,6 +134,66 @@
 .filter-skills-items.active {
   background-color: rgba(207, 207, 0, 0.219);
 }
+
+.custom-dropdown {
+  position: relative;
+  width: 220px;
+  font-family: Arial, sans-serif;
+}
+
+.dropdown-header {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-header .placeholder {
+  color: #888;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-header .placeholder i {
+  margin-right: 5px;
+}
+
+.dropdown-header .selected {
+  color: #333;
+}
+
+.dropdown-arrow {
+  margin-left: auto;
+  font-size: 0.8em;
+}
+
+.dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.dropdown-list-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-list-item:hover {
+  background-color: #f2f2f2;
+}
+
+
 @media (max-width: 768px) {
   .test {
     width: 0;
