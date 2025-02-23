@@ -43,6 +43,9 @@
   padding-left: 3%;
   padding-right: 3%;
 }
+.yellow-highlight {
+  color: rgba(255, 255, 0, 0.712);
+}
 .alinea {
   font-size: 1.2rem;
   font-weight: bold;

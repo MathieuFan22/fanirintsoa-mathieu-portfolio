@@ -13,7 +13,7 @@ const AboutPage: React.FC = () => {
       </div>
       <div className="section-content">
         <div className="left-side">
-          <Fade direction="up" fraction={0.1} triggerOnce={false} cascade>
+          <Fade direction="up" fraction={0.1} triggerOnce={true} cascade>
             <p className="intro">
               <span className="alinea">I</span> am Fanirintsoa Mathieu, a
               Malagasy developer and graphic designer based in Antananarivo.
@@ -25,14 +25,28 @@ const AboutPage: React.FC = () => {
               >
                 ISPM Antsobolo
               </a>{" "}
-              in Computer Science, Applied Statistics, and
-              Artificial Intelligence. Besides my studies, I also work as a
-              frontend developer and graphic designer freelancer.
+              in Computer Science, Applied Statistics, and Artificial
+              Intelligence. Besides my studies, I also work as a frontend
+              developer and graphic designer freelancer.
             </p>
             <p className="intro">
-              I was passionate about the IT world since my childhood, and I have
-              a deep appreciation for visual arts, including graphic design,
-              illustration, drawing, photography, and videography.
+              Since my childhood, I have always been fascinated with the world
+              of  <span className="yellow-highlight">IT</span>, with its limitless potential for innovation and
+              problem-solving. As I also have a great admiration for <span className="yellow-highlight">visual arts </span>
+              like graphic design, illustration, drawing, photography, and
+              videography. As <strong> Cameron Conor </strong> once said :{" "}
+              <i>
+                " Passion is the fuel that ignites creativity, transforming
+                dreams into art. "{" "}
+              </i>
+            </p>
+            <p className="intro">
+              I am a <span className="yellow-highlight">resourceful and autonomous problem-solver</span>, always finding
+              innovative solutions and <span className="yellow-highlight">adapting</span> quickly to new challenges. My
+              ability to learn independently allows me to face complex tasks, while my adaptability ensures I can navigate
+              changing environments with ease. Whether working solo or in a
+              team, I stay <span className="yellow-highlight">efficient</span>, and <span className="yellow-highlight">proactive</span> in achieving my
+              goals.
             </p>
           </Fade>
         </div>
