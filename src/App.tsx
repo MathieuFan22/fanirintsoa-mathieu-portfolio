@@ -11,6 +11,7 @@ import ScrollProgressCircle from "./ScrollProgressCircle";
 import Lottie from "lottie-react";
 import animationData from "./AnimatedLogo.json";
 import useAssetsLoaded from "./useAssestsLoaded";
+import SectionWrapper from "./SectionWrapper";
 
 const App: React.FC = () => {
   const assetsLoaded = useAssetsLoaded();
@@ -33,24 +34,24 @@ const App: React.FC = () => {
         </div>
       ) : (
         <div style={{ opacity: opacity }}>
-          <ScrollProgressCircle />
-          <Navbar />          
-          <section id="home" className="section dark">
+        <ScrollProgressCircle />
+        <Navbar />          
+        <section id="home" className="section dark">
             <WelcomePage />
           </section>
-          <section id="about" className="section dark">
-            <AboutPage />
-          </section>
-          <section id="skills" className="section dark">
-            <SkillsPage />
-          </section>
-          <section id="projects" className="section dark">
-            <ProjectsPage />
-          </section>
-          <footer className="footer">
-            <p>© {new Date().getFullYear()} Fanirintsoa Mathieu. All rights reserved.</p>
-          </footer>
-        </div>
+        <section id="about" className="section dark">
+          <AboutPage />
+        </section>
+        <section id="skills" className="section dark">
+          <SkillsPage />
+        </section>
+        <section id="projects" className="section dark">
+          <ProjectsPage />
+        </section>
+        <footer className="footer">
+          <p>© {new Date().getFullYear()} Fanirintsoa Mathieu. All rights reserved.</p>
+        </footer>
+      </div>
       )}
     </div>
   );
