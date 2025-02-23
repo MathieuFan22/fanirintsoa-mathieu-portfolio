@@ -117,22 +117,26 @@
   transition: all 0.05s ease-in-out;
 }
 .filter-skills {
-  
+  border: 0.5px solid rgb(189, 189, 0);
+  padding: 0.4rem;
+  padding-bottom: 0.5rem;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
   margin-bottom: 100px;
   justify-content: center;
+  align-items: center;
+  border-radius: 30px;
 }
 .filter-skills-items {
-  border: 0.5px solid yellow;
+ 
   padding: 0.5rem 1rem;
-  border-radius: 7px;
+  border-radius: 30px;
   cursor: pointer;
   user-select: none;
 }
 .filter-skills-items.active {
-  background-color: rgba(207, 207, 0, 0.219);
+  background-color: #333;
 }
 
 .custom-dropdown {
@@ -201,5 +205,16 @@
   .honey-comb-container {
     flex-direction: column;
     gap: 5rem;
+  }
+  .filter-skills {
+    padding: 0.2rem;
+    gap: 3px;
+  }
+  .filter-skills-items {
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 0.9rem;
   }
 }
