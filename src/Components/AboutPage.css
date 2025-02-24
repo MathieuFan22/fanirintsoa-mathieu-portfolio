@@ -132,14 +132,15 @@
   }
   .about-section .left-side,.project-section .left-side,
   .about-section .right-side {
-    width: 85%;
+    width: 90%;
     /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .intro {
-    padding-left: 0%;
+
+    margin-left: -5% !important;
     padding-right: 3% !important;
     font-size: 1.1rem !important;
   }
