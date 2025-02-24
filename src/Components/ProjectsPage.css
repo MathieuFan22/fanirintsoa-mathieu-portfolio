@@ -24,6 +24,12 @@
   justify-content: start;
   transition: border 0.3s ease-in-out;
   border-bottom: 0.5px solid rgba(131, 131, 131, 0);
+  position: relative;
+  
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
 }
 .card-container.hover {
   border-bottom: 0.5px solid rgb(131, 131, 131);
