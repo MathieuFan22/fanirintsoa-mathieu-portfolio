@@ -66,3 +66,8 @@ body {
   scrollbar-width: thin;
   scrollbar-color: rgb(161, 161, 161) rgb(0, 0, 0);
 }
+@media (max-width: 768px) {
+body {
+  opacity: 0.1;
+}
+}
