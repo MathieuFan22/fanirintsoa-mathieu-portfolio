@@ -11,7 +11,7 @@ import ScrollProgressCircle from "./ScrollProgressCircle";
 import Lottie from "lottie-react";
 import animationData from "./AnimatedLogo.json";
 import useAssetsLoaded from "./useAssestsLoaded";
-import SectionWrapper from "./SectionWrapper";
+// import SectionWrapper from "./SectionWrapper";
 
 const App: React.FC = () => {
   const assetsLoaded = useAssetsLoaded();
