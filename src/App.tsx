@@ -11,6 +11,7 @@ import ScrollProgressCircle from "./ScrollProgressCircle";
 import Lottie from "lottie-react";
 import animationData from "./AnimatedLogo.json";
 import useAssetsLoaded from "./useAssestsLoaded";
+import ContactPage from "./Components/ContactPage";
 // import SectionWrapper from "./SectionWrapper";
 
 const App: React.FC = () => {
@@ -47,6 +48,9 @@ const App: React.FC = () => {
         </section>
         <section id="projects" className="section dark">
           <ProjectsPage />
+        </section>
+        <section id="contact" className="section dark">
+          <ContactPage />
         </section>
         <footer className="footer">
           <p>© {new Date().getFullYear()} Fanirintsoa Mathieu. All rights reserved.</p>

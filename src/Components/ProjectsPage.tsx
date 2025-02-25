@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProjectsPage.css";
+import "./project-page.css";
 import { Fade } from "react-awesome-reveal";
 import ProjectCards from "./ProjectCards";
 

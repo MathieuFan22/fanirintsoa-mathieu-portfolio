@@ -1,4 +1,4 @@
-import "./SkillsPage.css";
+import "./skills-page.css";
 import { Fade } from "react-awesome-reveal";
 import HexagonContainer from "./HexagonContainer";
 import InfiniteSlider from "./InfiniteSlider";

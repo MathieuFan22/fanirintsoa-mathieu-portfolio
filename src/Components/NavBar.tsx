@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./NavBar.css";
+import "./navbar.css";
 import { Fade } from "react-awesome-reveal";
 
 const Navbar: React.FC = () => {

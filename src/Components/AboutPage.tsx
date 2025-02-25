@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutPage.css";
+import "./about-page.css";
 import { Fade } from "react-awesome-reveal";
 const AboutPage: React.FC = () => {
   return (

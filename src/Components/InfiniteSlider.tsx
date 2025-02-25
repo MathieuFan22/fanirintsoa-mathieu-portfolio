@@ -1,5 +1,5 @@
 import React from "react";
-import "./InfiniteSlider.css";
+import "./infinite-slider.css";
 
 const technologies = [
   "Flutter",
