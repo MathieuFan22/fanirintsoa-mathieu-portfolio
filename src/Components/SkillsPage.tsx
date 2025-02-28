@@ -2,7 +2,7 @@ import "./skills-page.css";
 import { Fade } from "react-awesome-reveal";
 import HexagonContainer from "./HexagonContainer";
 import InfiniteSlider from "./InfiniteSlider";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 
 const SkillsPage: React.FC = () => {
