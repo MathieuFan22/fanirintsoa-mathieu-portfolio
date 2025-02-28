@@ -2,17 +2,10 @@ import "./skills-page.css";
 import { Fade } from "react-awesome-reveal";
 import HexagonContainer from "./HexagonContainer";
 import InfiniteSlider from "./InfiniteSlider";
-import { useRef, useState } from "react";
-// import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useState } from "react";
+
 
 const SkillsPage: React.FC = () => {
-  const ref = useRef(null);
-  // const { scrollYProgress } = useScroll({
-  //   target: ref,
-  //   offset: ["start start", "end start"],
-  // });
-  // const hexaX = useTransform(scrollYProgress, [0, 0.8], [-500, 0]);
-  // const hexa2X = useTransform(scrollYProgress, [0, 0.8], [0, 500]);
 
   const [activeCategory, setActiveCategory] = useState<string>("");
   const [isFiltered, setisFiltered] = useState<boolean>(false);
@@ -53,8 +46,10 @@ const SkillsPage: React.FC = () => {
     setisFiltered(true);
   };
 
+ 
+  
   return (
-    <div className="skills-section" ref={ref}>
+    <div className="skills-section" >
       <div className="section-title">
         <Fade direction="left">
           <div className="dot"></div>
@@ -77,6 +72,7 @@ const SkillsPage: React.FC = () => {
           ))}
         </div>
         <div className="honey-comb-container">
+        <Fade direction="up" cascade damping={0.2} >
           <div className="first-hc">
             <div className="second-line hexagon-row">
               <HexagonContainer
@@ -217,6 +213,7 @@ const SkillsPage: React.FC = () => {
               />
             </div>
           </div>
+        </Fade>
         </div>
       </div>
       <InfiniteSlider />

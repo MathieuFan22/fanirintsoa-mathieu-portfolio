@@ -40,11 +40,12 @@
 }
 .left-side .function {
   font-size: 2.3rem;
-  color: #ddd;
+  color: #eee;
   margin-bottom: 35px;
 }
 
 .left-side h1 {
+  color: #eee;
   font-size: 3rem;
   margin-bottom: 1rem;
   font-family: "Strretch", Arial, Helvetica, sans-serif;
