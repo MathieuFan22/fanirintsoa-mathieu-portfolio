@@ -43,18 +43,18 @@ const project = [
       "A digital board game platform that offers a variety of games, allowing players to compete against each other or challenge an AI in VS computer mode.",
   },
   {
-    imageSrcUrl: "BoardGames.jpg",
-    projectTitle: "Board Games",
-    projectTech: "React - Typescript - CSS",
+    imageSrcUrl: "Moradis.jpg",
+    projectTitle: "Moradis Logo",
+    projectTech: "Adobe Illustrator - Figma",
     projectDescription:
-    "A digital board game platform that offers a variety of games, allowing players to compete against each other or challenge an AI in VS computer mode.",
+    'A logo for a sales company, it is the combination of the symbol of "cheap - easy" and the cart of a supermarket.',
   },
   {
-    imageSrcUrl: "BoardGames.jpg",
-    projectTitle: "Board Games",
-    projectTech: "React - Typescript - CSS",
+    imageSrcUrl: "Signo.jpg",
+    projectTitle: "Signo",
+    projectTech: "Adobe Illustrator - Figma",
     projectDescription:
-    "A digital board game platform that offers a variety of games, allowing players to compete against each other or challenge an AI in VS computer mode.",
+    "A lofo for a mobile app for communication between hearing and deaf or mute individuals, it features a hand gesture that represents the letter “S” in alphabetic sign language.",
   },
   {
     imageSrcUrl: "BoardGames.jpg",
