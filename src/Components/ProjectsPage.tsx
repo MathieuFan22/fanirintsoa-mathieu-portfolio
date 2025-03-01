@@ -54,7 +54,7 @@ const project = [
     projectTitle: "Signo",
     projectTech: "Adobe Illustrator - Figma",
     projectDescription:
-    "A lofo for a mobile app for communication between hearing and deaf or mute individuals, it features a hand gesture that represents the letter “S” in alphabetic sign language.",
+    "A logo for a mobile app for communication between hearing and deaf or mute individuals, it features a hand gesture that represents the letter “S” in alphabetic sign language.",
   },
   {
     imageSrcUrl: "BoardGames.jpg",
