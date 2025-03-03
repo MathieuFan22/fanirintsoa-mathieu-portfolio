@@ -1,0 +1,35 @@
+.contact-section .section-content {
+  margin: 10%;
+}
+h2.get-in-touch {
+  font-family: "Strretch", Arial, Helvetica, sans-serif;
+}
+
+p.contact-info {
+  width: 50%;
+  font-size: 1.1rem;
+  font-family: "Modernist-Regular";
+}
+.contact-social-links {
+  margin-top: 3%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: rgb(138, 138, 138);
+  margin-bottom: 0.3rem;
+  text-decoration: none;
+  font-family: "Modernist-Regular";
+
+}
+
+.contact-social-links a:hover {
+  color: gray;
+}

@@ -1,16 +1,17 @@
-.about-section, .project-section {
+.about-section, .project-section, .contact-section {
   padding-top: 100px;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   width: 100%;
+  
   /* height: 100vh; */
 }
 .about-section .underline-name img {
   top: 20px;
   height: 60%;
 }
-.about-section .section-title, .project-section .section-title {
+.about-section .section-title, .project-section .section-title, .contact-section .section-title {
   display: flex;
   flex-direction: row;
   align-items: last baseline;
