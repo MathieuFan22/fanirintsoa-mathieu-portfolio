@@ -18,7 +18,7 @@
 .slider {
   display: flex;
   gap: 30px;
-  animation: slide 15s linear infinite;
+  animation: slide 25s linear infinite;
   width: max-content;
 }
 .dot-spacing {
