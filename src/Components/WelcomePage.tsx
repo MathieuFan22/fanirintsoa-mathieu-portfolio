@@ -11,6 +11,8 @@ import {
 import { Fade } from "react-awesome-reveal";
 import HackerText from "./HackerStyleText";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useTheme } from "../ThemeContext";
+const { isLightMode } = useTheme();
 
 const WelcomePage: React.FC = () => {
   const { scrollYProgress } = useScroll();

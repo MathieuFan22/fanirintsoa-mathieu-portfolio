@@ -3,18 +3,19 @@ import "./navbar.css";
 import { Fade } from "react-awesome-reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { useTheme } from "../ThemeContext"; // Import the theme context
 
 const Navbar: React.FC = () => {
+  const { isLightMode, toggleTheme } = useTheme(); // Access global theme state
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  const [lightmodeActivated, setlightmodeActivated] = useState(faMoon);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
 
-     
       const sections = document.querySelectorAll("section");
       let currentSection = "home";
       sections.forEach((section) => {
@@ -32,9 +33,6 @@ const Navbar: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const handleLightModeSwitch = () => {
-   lightmodeActivated === faMoon ? setlightmodeActivated(faSun) : setlightmodeActivated(faMoon);
-  }
 
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
@@ -73,7 +71,12 @@ const Navbar: React.FC = () => {
               </a>
             </li>
           ))}
-          <FontAwesomeIcon icon={lightmodeActivated} className="light-switch-icon" onClick={handleLightModeSwitch}/>
+          {/* Light mode switch */}
+          <FontAwesomeIcon
+            icon={isLightMode ? faSun : faMoon}
+            className="light-switch-icon"
+            onClick={toggleTheme}
+          />
         </ul>
       </div>
     </nav>
