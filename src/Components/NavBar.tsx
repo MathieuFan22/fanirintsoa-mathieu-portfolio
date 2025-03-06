@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
               </a>
             </li>
           ))}
-          <FontAwesomeIcon icon={lightmodeActivated}  onClick={handleLightModeSwitch}/>
+          <FontAwesomeIcon icon={lightmodeActivated} className="light-switch-icon" onClick={handleLightModeSwitch}/>
         </ul>
       </div>
     </nav>

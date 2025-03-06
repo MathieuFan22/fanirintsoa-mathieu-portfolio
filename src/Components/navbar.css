@@ -106,7 +106,12 @@
 .burger-menu.open .bar:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -6px);
 }
-
+.light-switch-icon {
+  padding-top: 0.2rem;
+  height: 1.1rem;
+  width: 1.1rem;
+  cursor: pointer;
+}
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .burger-menu {
