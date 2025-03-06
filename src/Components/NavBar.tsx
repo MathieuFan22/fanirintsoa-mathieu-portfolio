@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import { Fade } from "react-awesome-reveal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home"); 
+  const [activeSection, setActiveSection] = useState("home");
+  const [lightmodeActivated, setlightmodeActivated] = useState(faMoon);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,6 +32,9 @@ const Navbar: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const handleLightModeSwitch = () => {
+   lightmodeActivated === faMoon ? setlightmodeActivated(faSun) : setlightmodeActivated(faMoon);
+  }
 
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
@@ -67,6 +73,7 @@ const Navbar: React.FC = () => {
               </a>
             </li>
           ))}
+          <FontAwesomeIcon icon={lightmodeActivated}  onClick={handleLightModeSwitch}/>
         </ul>
       </div>
     </nav>

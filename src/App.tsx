@@ -17,6 +17,7 @@ import ContactPage from "./Components/ContactPage";
 const App: React.FC = () => {
   const assetsLoaded = useAssetsLoaded();
   const [opacity, setOpacity] = useState(0);
+  const [isLightMode, setisLightMode] = useState("light");
   useLenis();
 
   useEffect(() => {
@@ -37,23 +38,23 @@ const App: React.FC = () => {
         <div style={{ opacity: opacity }}>
         <ScrollProgressCircle />
         <Navbar />          
-        <section id="home" className="section dark">
+        <section id="home" className="section ">
             <WelcomePage />
           </section>
-        <section id="about" className="section dark">
+        <section id="about" className="section ">
           <AboutPage />
         </section>
-        <section id="skills" className="section dark">
+        <section id="skills" className="section ">
           <SkillsPage />
         </section>
-        <section id="projects" className="section dark">
+        <section id="projects" className="section ">
           <ProjectsPage />
         </section>
-        <section id="contact" className="section dark">
+        <section id="contact" className="section ">
           <ContactPage />
         </section>
         <footer className="footer">
-          <p>© {new Date().getFullYear()} Fanirintsoa Mathieu. All rights reserved.</p>
+          <p>© {new Date().getFullYear()}, Fanirintsoa Mathieu.</p>
         </footer>
       </div>
       )}
