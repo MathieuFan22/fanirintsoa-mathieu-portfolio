@@ -9,8 +9,10 @@ import {
   faWhatsapp,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { useTheme } from "../ThemeContext";
 
 const ContactPage: React.FC = () => {
+  const { isLightMode } = useTheme();
   return (
     <div className="contact-section">
       <div className="section-title">
@@ -18,7 +20,7 @@ const ContactPage: React.FC = () => {
           <div className="dot"></div>
           <h1>Contacts</h1>
         </Fade>
-        <div className="line"></div>
+        <div className={`line ${isLightMode? "light" : "dark"}`}></div>
       </div>
       <div className="section-content">
         <h2 className="get-in-touch">GET IN TOOUCH</h2>

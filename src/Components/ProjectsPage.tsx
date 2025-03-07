@@ -2,9 +2,10 @@ import React from "react";
 import "./project-page.css";
 import { Fade } from "react-awesome-reveal";
 import ProjectCards from "./ProjectCards";
+import { useTheme } from "../ThemeContext";
 
 const ProjectsPage: React.FC = () => {
-  
+  const { isLightMode } = useTheme();
   return (
     <div className="project-section">
       <div className="section-title">
@@ -12,7 +13,7 @@ const ProjectsPage: React.FC = () => {
           <div className="dot"></div>
           <h1>Projects</h1>
         </Fade>
-        <div className="line"></div>
+        <div className={`line ${isLightMode? "light" : "dark"}`}></div>
       </div>
       <div className="section-content-project">
         <div className="left-side">

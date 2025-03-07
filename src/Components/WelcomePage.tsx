@@ -13,7 +13,6 @@ import HackerText from "./HackerStyleText";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useTheme } from "../ThemeContext";
 
-
 const WelcomePage: React.FC = () => {
   const { scrollYProgress } = useScroll();
   const { isLightMode } = useTheme();
@@ -22,7 +21,7 @@ const WelcomePage: React.FC = () => {
     return (
     <section className={`welcome-section ${isLightMode? "light" : "dark"}`}>
       <div className={`left-side ${isLightMode? "light" : "dark"}`} >
-        <motion.h1 style={{ x: h1X }}>
+        <motion.h1 style={{ x: h1X, transition: "all 0s " }}>
           HELLOO <span className="world">WOORLD</span>
         </motion.h1>
 

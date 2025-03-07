@@ -3,13 +3,14 @@ import { Fade } from "react-awesome-reveal";
 import HexagonContainer from "./HexagonContainer";
 import InfiniteSlider from "./InfiniteSlider";
 import { useState } from "react";
+import { useTheme } from "../ThemeContext";
 
 
 const SkillsPage: React.FC = () => {
 
   const [activeCategory, setActiveCategory] = useState<string>("");
   const [isFiltered, setisFiltered] = useState<boolean>(false);
-
+  const { isLightMode } = useTheme();
   const categories = ["Frontend", "Backend", "Tools", "Design"];
 
   const skills = [
@@ -49,13 +50,13 @@ const SkillsPage: React.FC = () => {
  
   
   return (
-    <div className="skills-section" >
+    <div className={`skills-section ${isLightMode? "light" : "dark"}`} >
       <div className="section-title">
         <Fade direction="left">
           <div className="dot"></div>
           <h1>Skills</h1>
         </Fade>
-        <div className="line"></div>
+        <div className={`line ${isLightMode? "light" : "dark"}`}></div>
       </div>
       <div className="section-content">
         <div className="filter-skills">

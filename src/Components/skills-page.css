@@ -39,6 +39,9 @@
   align-items: center;
   transition: all 0.05s ease-in-out;
 }
+.light .skill-logo {
+  filter: invert(1);
+}
 .hexagon-container.frontend-skills,
 .hexagon-container.backend-skills,
 .hexagon-container.tools-skills,
@@ -121,7 +124,7 @@
 .filter-skills {
   border: 0.5px solid rgb(189, 189, 0);
   padding: 0.4rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
   display: flex;
   flex-direction: row;
   gap: 5px;
@@ -129,6 +132,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 30px;
+  font-family: "Poppins-Regular";
 }
 .filter-skills-items {
  
@@ -139,6 +143,10 @@
 }
 .filter-skills-items.active {
   background-color: #333;
+}
+.light .filter-skills-items.active {
+  background-color: #8585858f;
+  color: white;
 }
 
 

@@ -47,6 +47,9 @@
 .yellow-highlight {
   color: rgba(255, 255, 0, 0.712);
 }
+.yellow-highlight.light {
+  color: rgb(190, 156, 0);
+}
 .alinea {
   font-size: 1.2rem;
   font-weight: bold;
@@ -97,6 +100,9 @@
   color: #d4d4d4;
   margin: 20px 0;
 }
+.light .whatido-title {
+  color: #535353;
+}
 .whatido {
   display: flex;
   flex-wrap: wrap;
@@ -111,11 +117,17 @@
   background-color: #0a0a0a70;
   font-size: 1.1rem;
 }
+.light .whatido-item {
+  background-color: #d1d1d11f;
+}
 .dev {
   border: 1px solid rgba(255, 0, 0, 0.795);
 }
 .design {
   border: 1px solid rgba(255, 255, 0, 0.712);
+}
+.light .design {
+  border-color: rgb(201, 187, 60);
 }
 @media (max-width: 768px) {
  

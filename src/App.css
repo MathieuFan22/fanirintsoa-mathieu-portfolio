@@ -1,5 +1,6 @@
 /* src/App.css */
-html, body {
+html,
+body {
   margin: 0;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
@@ -16,7 +17,6 @@ html, body {
   width: 200px;
 }
 .section {
-  
   /* min-height: 50vh; */
   /* max-height: 120vh; */
   /* height: 100vh; */
@@ -46,7 +46,8 @@ html, body {
   position: sticky;
 }
 .container.light {
-  background-color: #e9e9e9;
+  color: #303030;
+  background-color: #ffffff;
   background-image: radial-gradient(rgb(201, 201, 201) 1px, transparent 0.5px);
   transition: all 0.2s ease-in-out;
 }
@@ -56,7 +57,8 @@ html, body {
   transition: all 0.2s ease-in-out;
 }
 @keyframes animateBlur1 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) scale(1);
     top: 0;
   }
@@ -67,9 +69,9 @@ html, body {
   }
 }
 
-
 @keyframes animateBlur2 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) scale(1);
   }
   50% {
@@ -104,6 +106,12 @@ html, body {
   z-index: -1;
   animation: animateBlur2 8s ease-in-out infinite alternate;
 }
+.container.light::after {
+  background-color: rgba(204, 57, 12, 0.733);
+}
+.container.light::before {
+  background-color: rgba(197, 177, 0, 0.514);
+}
 .footer {
   width: 100%;
   color: lightgreygrey;
@@ -121,7 +129,7 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
+
   /* Animation */
   opacity: 0;
   transform: translateY(200px);
@@ -162,16 +170,17 @@ html, body {
     top: 30% !important;
     right: 40%;
     width: 60px;
-  height: 60px;
-  filter: blur(50px);
-  background-color: rgb(255, 208, 0);
+    height: 60px;
+    filter: blur(50px);
+    background-color: rgb(255, 208, 0);
+  }
+  .container.light::before {
+    background-color: rgba(197, 177, 0, 0.514);
   }
   .container::after {
     top: 7%;
     right: 20%;
     width: 100px;
-  height: 100px;
+    height: 100px;
   }
 }
-
-

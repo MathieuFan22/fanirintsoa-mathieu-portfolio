@@ -3,10 +3,10 @@ import "./navbar.css";
 import { Fade } from "react-awesome-reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { useTheme } from "../ThemeContext"; // Import the theme context
+import { useTheme } from "../ThemeContext";
 
 const Navbar: React.FC = () => {
-  const { isLightMode, toggleTheme } = useTheme(); // Access global theme state
+  const { isLightMode, toggleTheme } = useTheme();
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -35,10 +35,14 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+    <nav
+      className={`navbar ${isLightMode ? "light" : "dark"} ${
+        isScrolled ? "scrolled" : ""
+      }`}
+    >
       <div className="navbar-container">
         <a href="#home">
-          <div className="brand">
+          <div className={`brand ${isLightMode ? "light" : "dark"}`}>
             <img className="logo" src="/logo.png" alt="Logo" />
             <div className="name-logo">
               <Fade direction="right">Fanirintsoa</Fade>
@@ -48,7 +52,9 @@ const Navbar: React.FC = () => {
         </a>
 
         <div
-          className={`burger-menu ${isOpen ? "open" : ""}`}
+          className={`burger-menu ${isOpen ? "open" : ""} ${
+            isLightMode ? "light" : "dark"
+          }`}
           onClick={() => setIsOpen(!isOpen)}
         >
           <div className="bar"></div>
@@ -56,7 +62,11 @@ const Navbar: React.FC = () => {
           <div className="bar"></div>
         </div>
 
-        <ul className={`nav-links ${isOpen ? "active" : "inactive"}`}>
+        <ul
+          className={`nav-links ${isOpen ? "active" : "inactive"} ${
+            isLightMode ? "light" : "dark"
+          }`}
+        >
           {["home", "about", "skills", "projects", "contact"].map((section) => (
             <li key={section}>
               <a
@@ -71,12 +81,16 @@ const Navbar: React.FC = () => {
               </a>
             </li>
           ))}
-          {/* Light mode switch */}
-          <FontAwesomeIcon
-            icon={isLightMode ? faSun : faMoon}
-            className="light-switch-icon"
-            onClick={toggleTheme}
-          />
+
+          
+
+                    <li>
+                      <FontAwesomeIcon
+                        icon={isLightMode ? faSun : faMoon}
+                        className="light-switch-icon"
+                        onClick={toggleTheme}
+                      />
+                    </li>
         </ul>
       </div>
     </nav>
