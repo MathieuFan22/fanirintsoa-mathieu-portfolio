@@ -12,12 +12,12 @@ import Lottie from "lottie-react";
 import animationData from "./AnimatedLogo.json";
 import useAssetsLoaded from "./useAssestsLoaded";
 import ContactPage from "./Components/ContactPage";
-import { useTheme } from "./ThemeContext"; // Import theme context
+import { useTheme } from "./ThemeContext";
 
 const App: React.FC = () => {
   const assetsLoaded = useAssetsLoaded();
   const [opacity, setOpacity] = useState(0);
-  const { isLightMode } = useTheme(); // Access global theme state
+  const { isLightMode } = useTheme();
   useLenis();
 
   useEffect(() => {
