@@ -12,15 +12,16 @@ import { Fade } from "react-awesome-reveal";
 import HackerText from "./HackerStyleText";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useTheme } from "../ThemeContext";
-const { isLightMode } = useTheme();
+
 
 const WelcomePage: React.FC = () => {
   const { scrollYProgress } = useScroll();
+  const { isLightMode } = useTheme();
   const h2X = useTransform(scrollYProgress, [0, 5], [0, 10500]);
   const h1X = useTransform(scrollYProgress, [0, 5], [0, -10500]);  
     return (
-    <section className="welcome-section">
-      <div className="left-side" >
+    <section className={`welcome-section ${isLightMode? "light" : "dark"}`}>
+      <div className={`left-side ${isLightMode? "light" : "dark"}`} >
         <motion.h1 style={{ x: h1X }}>
           HELLOO <span className="world">WOORLD</span>
         </motion.h1>
@@ -42,7 +43,7 @@ const WelcomePage: React.FC = () => {
             Passionate and fascinated by the IT world, creative, and
             resourceful. I turn ideas into unique digital experiences
           </p>
-          <div className="social-links">
+          <div className={`social-links ${isLightMode? "light" : "dark"}`}>
             <a
               href="https://www.linkedin.com/in/mathieu22"
               target="_blank"
@@ -79,7 +80,7 @@ const WelcomePage: React.FC = () => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
-          <div className="download-resume">
+          <div className={`download-resume ${isLightMode? "light" : "dark"}`}>
             <button>
               My resume <span className="padding"></span>
               <FontAwesomeIcon icon={faArrowDown} className="up-right-icon" />

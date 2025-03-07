@@ -18,8 +18,9 @@ const ProjectsPage: React.FC = () => {
         <div className="left-side">
         <Fade direction="left" fraction={0} triggerOnce={false} >
           {
-            project.map((project) => (
+            project.map((project, index) => (
               <ProjectCards
+                key={index}
                 projectTitle={project.projectTitle}
                 projectTech={project.projectTech}
                 projectDescription={project.projectDescription}

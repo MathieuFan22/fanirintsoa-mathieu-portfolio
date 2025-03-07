@@ -4,9 +4,17 @@
   align-items: center;
   padding: 3rem;
   padding-left: 12%;
-  color: #eee;
+  
   font-family: "Modernist-Regular";
   height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+.welcome-section.light  {
+  color: #1a1a1a !important;
+  transition: all 0.3s ease-in-out;
+}
+.welcome-section.dark {
+  color: #eee;
 }
 .underline-name {
   position: relative;
@@ -23,24 +31,13 @@
   width: 110%;
   pointer-events: none;
 }
-.padding {
-  padding-left: 10px;
-}
-.up-right-icon {
-  position: absolute;
-  width: 0.6rem;
-  transform: rotate(220deg);
-  margin-top: 2px;
-  margin-left: 2px;
-  color: #ddd;
-}
+
 .left-side,
 .right-side {
   width: 50%;
 }
 .left-side .function {
   font-size: 2.3rem;
-  color: #eee;
   margin-bottom: 35px;
 }
 
@@ -51,6 +48,11 @@
   font-family: "Strretch", Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+.left-side.light h1 {
+  color: #2b2b2b;
+  transition: all 0.3s ease-in-out;
 }
 .world {
   font-size: 2.64rem;
@@ -108,6 +110,11 @@
   color: rgb(209, 209, 209);
   margin-bottom: 0.3rem;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.social-links.light a {
+  color: #2b2b2b;
+  transition: all 0.3s ease-in-out;
 }
 
 .social-links a:hover {
@@ -133,11 +140,33 @@
   white-space: nowrap;
   min-width: fit-content;
   display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.download-resume.light button {
+  color: #2b2b2b;
+  border: 2px solid rgb(214, 76, 76);
+  transition: all 0.3s ease-in-out;
 }
 
 .download-resume button:hover {
   background: rgba(255, 255, 255, 0.2);
   border: 2px solid white;
+}
+.padding {
+  padding-left: 10px;
+}
+.up-right-icon {
+  position: absolute;
+  width: 0.6rem;
+  transform: rotate(220deg);
+  margin-top: 2px;
+  margin-left: 2px;
+  color: #ddd;
+  transition: all 0.3s ease-in-out;
+}
+.light button .up-right-icon {
+  color: #2b2b2b;
+  transition: all 0.3s ease-in-out;
 }
 /* .h1-container,
 .h2-container {
