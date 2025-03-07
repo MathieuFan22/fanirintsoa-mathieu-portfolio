@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./ScrollProgressCircle.css";
+import { useTheme } from "./ThemeContext";
 
 const ScrollProgressCircle: React.FC = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
-
+  const { isLightMode } = useTheme();
   useEffect(() => {
     const updateScrollProgress = () => {
       const scrollTop = window.scrollY;
@@ -19,7 +20,7 @@ const ScrollProgressCircle: React.FC = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <div className="progress-container" onClick={scrollToTop}>
+    <div className={`progress-container ${isLightMode? "light" : "dark"}`} onClick={scrollToTop}>
       <svg className="progress-circle" width="50" height="50">
         <circle cx="25" cy="25" r="20" strokeWidth="4" stroke="transparent" fill="none" />
         <circle
@@ -27,7 +28,7 @@ const ScrollProgressCircle: React.FC = () => {
           cy="25"
           r="20"
           strokeWidth="4"
-          stroke="darkRed"
+          stroke= {isLightMode? "rgb(206, 0, 0)" : "darkRed"}
           fill="none"
           strokeDasharray="125.6"
           strokeDashoffset={125.6 - (125.6 * scrollProgress) / 100}

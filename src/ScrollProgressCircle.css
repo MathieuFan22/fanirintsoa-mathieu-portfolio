@@ -13,6 +13,11 @@
   border-radius: 50%;
   user-select: none;
   cursor: pointer;
+  color: rgb(161, 161, 161);
+}
+.light .progress-container {
+  background-color: rgba(206, 206, 206, 0.452);
+  color: rgb(107, 107, 107);
 }
 
 .progress-circle {
@@ -25,5 +30,5 @@
   position: absolute;
   font-size: 12px;
   font-weight: bold;
-  color: rgb(161, 161, 161);
+  
 }

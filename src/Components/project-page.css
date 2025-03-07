@@ -51,6 +51,9 @@
   background-color: #303030;
   transition: all 0.3s ease-in-out;
 }
+.light .card-image-container:hover {
+  background-color: #636363;
+}
 .card-image-container img {
   width: 100%;
   border-radius: 8px 8px 0 0;
@@ -74,14 +77,23 @@
   color: #a8a8a8;
   transition: all 0.3s ease-in-out;
 }
+.light .project-title {
+  color: #5a5a5a;
+}
 .project-title.hover {
   color: rgb(255, 255, 255);
   transition: all 0.3s ease-in-out;
+}
+.light .project-title.hover {
+  color: rgb(0, 0, 0);
 }
 .github-link svg {
   color: #d8d8d8;
   font-size: 18px;
   padding-right: 5px;
+}
+.light .github-link svg {
+  color: #5a5a5a;
 }
 
 .project-tech {
@@ -94,6 +106,12 @@
   font-size: 1.1rem;
   color: #afafaf;
   transition: all 0.3s ease-in-out;
+}
+.light .project-description {
+  color: #5a5a5a;
+}
+.light .project-description.hover {
+  color: #000000;
 }
 .project-description.hover {
   color: rgb(255, 255, 255);

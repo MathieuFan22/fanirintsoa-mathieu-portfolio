@@ -61,7 +61,7 @@
 }
 
 .hexagon-container.down-opacity {
-  opacity: 0.35;
+  opacity: 0.15;
 }
 .hexagon-border {
   --b: 0.05rem;
@@ -94,6 +94,11 @@
   aspect-ratio: 1 / cos(30deg);
   clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
   backdrop-filter: blur(5px);
+  background-color: rgba(37, 37, 37, 0.295);
+}
+.light .hexagon {
+  background-color: rgba(228, 228, 228, 0.226);
+  backdrop-filter: blur(0px);
 }
 .section-content .skill-logo {
   width: 40px;
@@ -110,9 +115,6 @@
   padding: 30px;
 }
 
-.hexagon {
-  background-color: rgba(37, 37, 37, 0.295);
-}
 .third-line {
   margin-top: -43px;
 }
