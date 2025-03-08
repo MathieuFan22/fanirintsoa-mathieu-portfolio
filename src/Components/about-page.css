@@ -41,8 +41,8 @@
 }
 .intro {
   text-align: justify;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 .yellow-highlight {
   color: rgba(255, 255, 0, 0.712);
@@ -152,13 +152,13 @@
     align-items: center;
   }
   .intro {
-
-    margin-left: -5% !important;
-    padding-right: 3% !important;
+    /* padding-left: 4%; */
+    margin-left: -8% !important;
     font-size: 1.1rem !important;
   }
-
+  
   .image {
+    margin-left: -5% !important;
     width: 300px;
   }
 }

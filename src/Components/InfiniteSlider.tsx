@@ -1,5 +1,6 @@
 import React from "react";
 import "./infinite-slider.css";
+import { useTheme } from "../ThemeContext";
 
 const technologies = [
   "Flutter",
@@ -20,8 +21,9 @@ const technologies = [
 ];
 
 const InfiniteSlider: React.FC = () => {
+  const { isLightMode } = useTheme();
   return (
-    <div className="slider-container">
+    <div className={`slider-container ${isLightMode? "light" : "dark"}`}>
       <div className="slider">
         {[...technologies, ...technologies].map((tech, index) => (
           <div key={index} className="text-item">
