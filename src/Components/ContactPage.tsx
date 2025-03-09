@@ -10,6 +10,7 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { useTheme } from "../ThemeContext";
+import { faWarning } from "@fortawesome/free-solid-svg-icons";
 
 const ContactPage: React.FC = () => {
   const { isLightMode } = useTheme();
@@ -72,6 +73,11 @@ const ContactPage: React.FC = () => {
           </a>
         </div>
       </div>
+      <div className="disclaimer">
+            <p>
+            <FontAwesomeIcon icon={faWarning} /> This website is a work in progress, some sections have not been finished yet.
+            </p>
+          </div>
     </div>
   );
 };
