@@ -10,9 +10,13 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { useTheme } from "../ThemeContext";
-import { faWarning } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faWarning } from "@fortawesome/free-solid-svg-icons";
 
 const ContactPage: React.FC = () => {
+  const email = "fanirintsoamathieu@gmail.com";
+
+  const mailtoLink = `mailto:${email}`;
+
   const { isLightMode } = useTheme();
   return (
     <div className="contact-section">
@@ -31,6 +35,14 @@ const ContactPage: React.FC = () => {
           friendly chat. Let’s bring your ideas to life, I'll get back to you as soon as possible!
         </p>
         <div className="contact-social-links">
+        <a
+            href={mailtoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
+            fanirintsoamathieu@gmail.com
+          </a>
           <a
             href="https://www.linkedin.com/in/mathieu22"
             target="_blank"
