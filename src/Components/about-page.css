@@ -72,53 +72,21 @@
   font-family: "Modernist-Bold";
 }
 .image-wrapper {
+  width: 350px;
   position: relative;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.image-container {
-  position: relative;
+  display: inline-block;
+  padding: 1.5px;
+  box-shadow: 0px 1rem 1.5rem -0.9rem #00000056;
+  background: linear-gradient(135deg, #faffcdf5, #3a4b8a00, #fffaca94);
+  border-radius: 11px;
 }
 
 .image {
   width: 350px;
   border-radius: 10px;
-  display: block;
+  margin-bottom: -2px;
 }
 
-.stats-container {
-  position: absolute;
-  bottom: -30px; /* Ensures it is attached to the bottom */
-  width: 90%;
-  max-width: 350px;
-  display: flex;
-  justify-content: center;
-}
-
-.stats-box {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  background: rgba(70, 70, 70, 0.192);
-  backdrop-filter: blur(10px);
-  padding: 12px;
-  border-radius: 15px;
-  text-align: center;
-  color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-.stats-box div {
-  flex: 1;
-}
-
-.highlight {
-  font-size: 18px;
-  font-weight: bold;
-  color: yellow;
-}
 
 
 .whatido-title {
@@ -184,8 +152,12 @@
     font-size: 1.1rem !important;
   }
   
-  .image {
+  .image-wrapper {
     margin-left: -5% !important;
+    width: 300px;
+   
+  }
+  .image{
     width: 300px;
   }
 }
