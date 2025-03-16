@@ -73,26 +73,53 @@
 }
 .image-wrapper {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
 }
 
 .image {
   width: 350px;
   border-radius: 10px;
+  display: block;
 }
 
-.image-wrapper::before {
-  content: "";
+.stats-container {
   position: absolute;
-  top: 270px; 
-  right: -100px; 
-  width: 200px;
-  height: 100px;
-  /* background-color: rgba(189, 0, 0, 0.5); */
-  filter: blur(30px);
-  border-radius: 50%;
-  z-index: -1; 
+  bottom: -30px; /* Ensures it is attached to the bottom */
+  width: 90%;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
 }
+
+.stats-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: rgba(70, 70, 70, 0.192);
+  backdrop-filter: blur(10px);
+  padding: 12px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.stats-box div {
+  flex: 1;
+}
+
+.highlight {
+  font-size: 18px;
+  font-weight: bold;
+  color: yellow;
+}
+
 
 .whatido-title {
   font-family: "Modernist-Bold";
