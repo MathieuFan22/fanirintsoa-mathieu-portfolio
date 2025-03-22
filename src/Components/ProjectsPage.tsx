@@ -72,5 +72,12 @@ const project = [
     projectDescription:
     "A logo for a mobile app for communication between hearing and deaf or mute individuals, it features a hand gesture that represents the letter “S” in alphabetic sign language.",
   },
+  {
+    imageSrcUrl: "Portfolio.png",
+    projectTitle: "My Portfolio",
+    projectTech: "React TS- Framer Motion - Lenis - CSS",
+    projectDescription:
+      "A personal portfolio website with modern and interactive UI designed to showcase my skills, projects, and achievements in software development, AI, and design.",
+  },
 ];
 export default ProjectsPage;
