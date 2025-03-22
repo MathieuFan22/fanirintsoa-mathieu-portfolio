@@ -59,14 +59,14 @@ const project = [
       "A personal portfolio website with modern and interactive UI designed to showcase my skills, projects, and achievements in software development, AI, and design.",
   },
   {
-    imageSrcUrl: "Moradis.jpg",
+    imageSrcUrl: "Moradis.png",
     projectTitle: "Moradis Logo",
     projectTech: "Adobe Illustrator - Figma",
     projectDescription:
     'A logo for a sales company, it is the combination of the symbol of "cheap - easy" and the cart of a supermarket.',
   },
   {
-    imageSrcUrl: "Signo.jpg",
+    imageSrcUrl: "Signo.png",
     projectTitle: "Signo",
     projectTech: "Adobe Illustrator - Figma",
     projectDescription:
