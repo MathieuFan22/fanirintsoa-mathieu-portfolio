@@ -44,7 +44,7 @@ const WelcomePage: React.FC = () => {
           </div>
         </motion.h2>
         <Fade direction="left">
-          <div className="function">{functionText} .</div>
+          <div className="function">{functionText} <Cursor cursorStyle="|" /></div>
           <p>
             Passionate and fascinated by the IT world, creative, and
             resourceful. I turn ideas into unique digital experiences
