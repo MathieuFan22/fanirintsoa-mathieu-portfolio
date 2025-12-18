@@ -1,5 +1,5 @@
 import "./welcome-page.css";
-import { useTypewriter } from "react-simple-typewriter";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -18,16 +18,30 @@ const WelcomePage: React.FC = () => {
   const { scrollYProgress } = useScroll();
   const { isLightMode } = useTheme();
   const h2X = useTransform(scrollYProgress, [0, 5], [0, 10500]);
-  const h1X = useTransform(scrollYProgress, [0, 5], [0, -10500]);  
+  const h1X = useTransform(scrollYProgress, [0, 5], [0, -10500]);
   const [functionText] = useTypewriter({
-    words : ['WebApp Developer', 'Graphic Designer', 'UI/UX Designer', 'Mobile App Developer'],
-    loop : true, 
+    words: [
+      "WebApp Developer",
+      "Graphic Designer",
+      "UI/UX Designer",
+      "Mobile App Developer",
+    ],
+    loop: true,
     typeSpeed: 50,
     deleteSpeed: 50,
   });
-    return (
-    <section className={`welcome-section ${isLightMode? "light" : "dark"}`}>
-      <div className={`left-side ${isLightMode? "light" : "dark"}`} >
+  const download_resume = (): void => {
+    const link = document.createElement("a");
+    link.href = "/CV_Fanirintsoa-Mathieu.pdf";
+    link.download = "CV_Fanirintsoa-Mathieu.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  return (
+    <section className={`welcome-section ${isLightMode ? "light" : "dark"}`}>
+      <div className={`left-side ${isLightMode ? "light" : "dark"}`}>
         <motion.h1 style={{ x: h1X, transition: "all 0s " }}>
           HELLOO <span className="world">WOORLD</span>
         </motion.h1>
@@ -44,12 +58,12 @@ const WelcomePage: React.FC = () => {
           </div>
         </motion.h2>
         <Fade direction="left">
-          <div className="function">{functionText}</div>
+          <div className="function">{functionText}<Cursor cursorStyle="." /></div>
           <p>
             Passionate and fascinated by the IT world, creative, and
             resourceful. I turn ideas into unique digital experiences
           </p>
-          <div className={`social-links ${isLightMode? "light" : "dark"}`}>
+          <div className={`social-links ${isLightMode ? "light" : "dark"}`}>
             <a
               href="https://www.linkedin.com/in/mathieu22"
               target="_blank"
@@ -86,8 +100,8 @@ const WelcomePage: React.FC = () => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
-          <div className={`download-resume ${isLightMode? "light" : "dark"}`}>
-            <button>
+          <div className={`download-resume ${isLightMode ? "light" : "dark"}`}>
+            <button onClick={download_resume} className="download-resume-button">
               My resume <span className="padding"></span>
               <FontAwesomeIcon icon={faArrowDown} className="up-right-icon" />
             </button>
