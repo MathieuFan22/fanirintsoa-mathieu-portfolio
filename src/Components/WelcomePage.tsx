@@ -32,7 +32,7 @@ const WelcomePage: React.FC = () => {
   });
   const download_resume = (): void => {
     const link = document.createElement("a");
-    link.href = "CV_Fanirintsoa-Mathieu.pdf";
+    link.href = "/CV_Fanirintsoa-Mathieu.pdf";
     link.download = "CV_Fanirintsoa-Mathieu.pdf";
     document.body.appendChild(link);
     link.click();
