@@ -159,8 +159,8 @@ const SkillsPage: React.FC = () => {
           <div className="third-hc">
             <div className="second-line hexagon-row">
               <HexagonContainer
-                  url={skills[14].url}
-                  classNameFilter={getFilterClass(skills[14].category)} name={skills[14].name}              />
+                  url={skills[2].url}
+                  classNameFilter={getFilterClass(skills[2].category)} name={skills[2].name}              />
             </div>
 
             <div className="second-line hexagon-row">
