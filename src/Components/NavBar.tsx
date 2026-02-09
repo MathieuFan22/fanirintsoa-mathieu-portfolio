@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./navbar.css";
+import "../Styles//navbar.css";
 import { Fade } from "react-awesome-reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";

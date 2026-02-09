@@ -4,7 +4,6 @@ const useAssetsLoaded = () => {
   const [assetsLoaded, setAssetsLoaded] = useState(false);
 
   useEffect(() => {
-    // Function to check if all images are loaded
     const checkImagesLoaded = () => {
       const images = Array.from(document.querySelectorAll('img'));
       if (images.length === 0) return Promise.resolve();
@@ -23,12 +22,10 @@ const useAssetsLoaded = () => {
       );
     };
 
-    // Function to check if all fonts are loaded
     const checkFontsLoaded = () => {
       return document.fonts.ready;
     };
 
-    // Wait for both images and fonts to load
     Promise.all([checkImagesLoaded(), checkFontsLoaded()]).then(() => {
       setTimeout(() => {
         

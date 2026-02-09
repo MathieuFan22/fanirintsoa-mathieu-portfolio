@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./ScrollProgressCircle.css";
-import { useTheme } from "./ThemeContext";
+import "../Styles/ScrollProgressCircle.css";
+import { useTheme } from "../ThemeContext";
 
 const ScrollProgressCircle: React.FC = () => {
   const [scrollProgress, setScrollProgress] = useState(0);

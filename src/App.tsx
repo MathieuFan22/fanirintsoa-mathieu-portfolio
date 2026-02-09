@@ -2,17 +2,17 @@ import { useEffect, useState } from "react";
 import Navbar from "./Components/NavBar";
 import "./App.css";
 import "./ui.css";
-import WelcomePage from "./Components/WelcomePage";
-import AboutPage from "./Components/AboutPage";
-import SkillsPage from "./Components/SkillsPage";
-import ProjectsPage from "./Components/ProjectsPage";
-import useLenis from "./useLenis";
-import ScrollProgressCircle from "./ScrollProgressCircle";
+import AboutPage from "./Pages/AboutPage";
+import SkillsPage from "./Pages/SkillsPage";
+import useLenis from "./utils/useLenis";
 import Lottie from "lottie-react";
 import animationData from "./AnimatedLogo.json";
-import useAssetsLoaded from "./useAssestsLoaded";
-import ContactPage from "./Components/ContactPage";
+import useAssetsLoaded from "./utils/useAssestsLoaded";
+import ContactPage from "./Pages/ContactPage";
 import { useTheme } from "./ThemeContext";
+import ProjectsPage from "./Pages/ProjectsPage";
+import WelcomePage from "./Pages/WelcomePage";
+import ScrollProgressCircle from "./ui/ScrollProgressCircle";
 
 const App: React.FC = () => {
   const assetsLoaded = useAssetsLoaded();

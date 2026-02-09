@@ -1,10 +1,10 @@
-import "./skills-page.css";
+import "../Styles//skills-page.css";
 import { Fade } from "react-awesome-reveal";
-import HexagonContainer from "./HexagonContainer";
-import InfiniteSlider from "./InfiniteSlider";
+import HexagonContainer from "../ui/HexagonContainer";
+import InfiniteSlider from "../ui/InfiniteSlider";
 import { useState } from "react";
 import { useTheme } from "../ThemeContext";
-import { categories, skills } from "../constants";
+import { categories, skills } from "../utils/constants";
 
 
 const SkillsPage: React.FC = () => {

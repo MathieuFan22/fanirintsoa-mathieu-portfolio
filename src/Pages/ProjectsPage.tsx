@@ -1,8 +1,8 @@
 import React from "react";
-import "./project-page.css";
+import "../Styles//project-page.css";
 import { Fade } from "react-awesome-reveal";
-import ProjectCards from "./ProjectCards";
 import { useTheme } from "../ThemeContext";
+import ProjectCards from "../ui/ProjectCards";
 
 const ProjectsPage: React.FC = () => {
   const { isLightMode } = useTheme();

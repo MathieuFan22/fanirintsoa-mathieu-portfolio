@@ -1,5 +1,5 @@
 import React from "react";
-import "./contact-page.css";
+import "../Styles//contact-page.css";
 import { Fade } from "react-awesome-reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

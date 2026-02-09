@@ -1,5 +1,5 @@
 import React from "react";
-import "./infinite-slider.css";
+import "../Styles//infinite-slider.css";
 import { useTheme } from "../ThemeContext";
 
 const technologies = [

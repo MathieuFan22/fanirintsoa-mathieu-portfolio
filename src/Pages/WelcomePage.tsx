@@ -1,4 +1,4 @@
-import "./welcome-page.css";
+import "../Styles//welcome-page.css";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -10,9 +10,9 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { Fade } from "react-awesome-reveal";
-import HackerText from "./HackerStyleText";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useTheme } from "../ThemeContext";
+import HackerText from "../ui/HackerStyleText";
 
 const WelcomePage: React.FC = () => {
   const { scrollYProgress } = useScroll();
