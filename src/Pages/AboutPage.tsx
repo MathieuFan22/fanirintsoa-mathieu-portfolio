@@ -58,8 +58,8 @@ const AboutPage: React.FC = () => {
           </div>
           <div className="whatido-title">What I offer ?</div>
           <div className="whatido">
-            <div className="whatido-item dev">Mobile App</div>
-            <div className="whatido-item dev">Desktop App</div>
+            <div className="whatido-item dev">Mobile Apps</div>
+            <div className="whatido-item dev">Desktop Apps</div>
             <div className="whatido-item dev">Website</div>
             <div className="whatido-item design">Social media Designs</div>
             <div className="whatido-item design">UI/UX Designs</div>
