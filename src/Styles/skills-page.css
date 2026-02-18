@@ -25,6 +25,7 @@
   justify-content: center;
   flex-wrap: wrap;
   user-select: none;
+
 }
 .first-hc, .second-hc, .third-hc {
   display: flex;
@@ -173,4 +174,7 @@
     user-select: none;
     font-size: 0.9rem;
   }
+}
+.gtr{
+  width: 100%;
 }
