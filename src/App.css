@@ -43,7 +43,7 @@ body {
   color: #ddd;
   background-size: 30px 30px;
   background-position: 0 0;
-  position: sticky;
+  position: relative;
 }
 .container.light {
   color: #303030;

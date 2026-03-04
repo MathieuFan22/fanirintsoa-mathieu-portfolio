@@ -31,8 +31,8 @@ body {
   position: relative;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  overscroll-behavior: contain;
-  scroll-snap-type: y mandatory;
+  overscroll-behavior-y: auto;
+  scroll-snap-type: none;
   cursor: url('/assets/cursor.png'), auto !important;
   /* cursor: none; */
 }
