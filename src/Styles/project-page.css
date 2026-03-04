@@ -17,6 +17,8 @@
 }
 
 .card-container {
+  --spotlight-x: 50%;
+  --spotlight-y: 50%;
   color: white;
   max-width: 450px;
   display: flex;
@@ -42,11 +44,41 @@
   margin-bottom: 10px;
   padding: 10% 5% 0 5%;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease-in-out;
 }
+.card-image-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(
+    circle 180px at var(--spotlight-x) var(--spotlight-y),
+    rgba(255, 214, 94, 0.24),
+    rgba(255, 214, 94, 0.08) 35%,
+    transparent 70%
+  );
+  transition: opacity 0.25s ease-in-out;
+}
+
+.card-container.hover .card-image-container::before {
+  opacity: 1;
+}
+
+.light .card-image-container::before {
+  background: radial-gradient(
+    circle 180px at var(--spotlight-x) var(--spotlight-y),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.18) 35%,
+    transparent 70%
+  );
+}
+
 .card-image-container:hover {
   background-color: #303030;
   transition: all 0.3s ease-in-out;

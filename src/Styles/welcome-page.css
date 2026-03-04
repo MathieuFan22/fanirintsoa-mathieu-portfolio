@@ -132,22 +132,48 @@
   font-family: "Modernist-Regular";
   border: 2px solid rgb(156, 56, 56);
   font-size: 1.1rem;
-  transition: all 0.3s ease;
   white-space: nowrap;
   min-width: fit-content;
   display: inline-block;
-  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition: color 0.18s ease-in-out, border-color 0.18s ease-in-out, transform 0.18s ease-in-out;
   cursor: pointer;
 }
+
+.download-resume button::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: rgb(184, 26, 26);
+  opacity: 0;
+  transform: translate(-35%, -35%) scale(0);
+  transition: transform 0.32s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.12s ease-in-out;
+  z-index: -1;
+}
+
 .download-resume.light button {
   color: #2b2b2b;
   border: 2px solid rgb(214, 76, 76);
-  transition: all 0.3s ease-in-out;
 }
 
 .download-resume button:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border: 2px solid white;
+  color: white;
+  border-color: rgb(184, 26, 26);
+}
+
+.download-resume button:hover::before {
+  opacity: 1;
+  transform: translate(95%, 95%) scale(18);
+}
+
+.download-resume button:hover .up-right-icon {
+  color: white;
 }
 .padding {
   padding-left: 10px;

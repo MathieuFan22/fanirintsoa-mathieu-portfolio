@@ -2,6 +2,7 @@ import React from "react";
 import "../Styles/about-page.css";
 import { Fade } from "react-awesome-reveal";
 import { useTheme } from "../ThemeContext";
+
 const AboutPage: React.FC = () => {
   const { isLightMode } = useTheme();
   return (
