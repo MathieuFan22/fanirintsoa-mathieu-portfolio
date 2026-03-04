@@ -13,11 +13,15 @@ const HexagonContainer: React.FC<HexagonClassnameProps> = ({
 }) => {
   const { isLightMode } = useTheme();
   return (
-    <div title={name} className={`hexagon-container ${isLightMode ? "light" : "dark"} ${classNameFilter}`}>
+    <div
+      aria-label={name}
+      className={`hexagon-container ${isLightMode ? "light" : "dark"} ${classNameFilter}`}
+    >
       <div className="hexagon-border"></div>
       <div className={`hexagon ${classNameFilter}`}>
         <img src={url} alt={name} className={`skill-logo ${classNameFilter}`} />
       </div>
+      <span className="skill-tooltip">{name}</span>
     </div>
   );
 }

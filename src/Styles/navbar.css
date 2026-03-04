@@ -9,11 +9,13 @@
 }
 .brand.light {
   filter: invert(1);
+  opacity: 0.7;
 }
 .name-logo {
   margin-left: 8px;
   font-size: 0.8rem;
   font-family: "Modernist-Regular";
+  letter-spacing: 1.3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +84,7 @@
 
 /* Active link styling */
 .nav-links li a.active {
-  color: rgb(177, 0, 0); /* Highlight color */
+  color: rgb(177, 0, 0); 
   font-weight: bold;
 }
 

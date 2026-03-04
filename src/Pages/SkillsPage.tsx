@@ -10,7 +10,7 @@ import { categories, skills } from "../utils/constants";
 const SkillsPage: React.FC = () => {
 
   const [activeCategory, setActiveCategory] = useState<string>("");
-  const [isFiltered, setisFiltered] = useState<boolean>(false);
+  const [isFiltered, setIsFiltered] = useState<boolean>(false);
   const { isLightMode } = useTheme();
 
 
@@ -41,9 +41,13 @@ const SkillsPage: React.FC = () => {
 
   const handleCategoryClick = (category: string) => {
     setActiveCategory(category);
-    setisFiltered(true);
+    setIsFiltered(true);
   };
 
+  const handleClearFilter = () => {
+    setActiveCategory("");
+    setIsFiltered(false);
+  };
 
 
   return (
@@ -68,6 +72,13 @@ const SkillsPage: React.FC = () => {
             </div>
           ))}
         </div>
+        {isFiltered && (
+          <div className="clear-filter-wrap">
+            <button className="clear-filter-btn" type="button" onClick={handleClearFilter}>
+              Clear Filter
+            </button>
+          </div>
+        )}
         <div className="honey-comb-container">
           <Fade direction="up" cascade damping={0.2} >
             <div className="first-hc">
